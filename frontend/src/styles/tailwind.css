@@ -1,0 +1,140 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    -webkit-print-color-adjust:exact;
+}
+
+/* =========WHO I AM========== */
+.WhoIam-navbar {
+    @apply fixed top-0 bottom-0 left-0 w-80 bg-gray-200 dark:bg-gray-600;
+}
+.navbar-item {
+    @apply rounded-lg m-1 p-3;
+}
+
+
+
+
+
+
+/* =========SCROOLBAR OPTIONS============= */
+:root {
+    --primary: rgb(31 41 55);
+    --secondary: rgb(75 85 99);
+}
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: var(--secondary) var(--primary);
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    /* width: 10px; */
+    @apply w-0 lg:w-[10px];
+}
+
+/* *::-webkit-scrollbar-track {
+background: var(--primary);
+border-radius: 5px;
+}
+
+*::-webkit-scrollbar-thumb {
+background-color: var(--secondary);
+border-radius: 14px;
+border: 3px solid var(--primary);
+} */
+
+*::-webkit-scrollbar-thumb {
+    @apply border-none bg-white dark:bg-gray-700;
+}
+*::-webkit-scrollbar-track{
+    @apply dark:bg-gray-600;
+}
+
+.scrollbar-1::-webkit-scrollbar-thumb {
+    @apply border-none bg-gray-300 dark:bg-gray-600;
+}
+.scrollbar-1::-webkit-scrollbar-track{
+    @apply dark:bg-gray-500;
+}
+
+
+
+/* ====== dark mode============ */
+.checkbox-rect2 input[type="checkbox"] {
+    display: none;
+}
+.checkbox-rect2 input[type="checkbox"] + label {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 20px;
+    font: 14px/20px "Open Sans", Arial, sans-serif;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+.checkbox-rect2 input[type="checkbox"]:hover + label:hover {
+    color: rgb(239, 142, 205);
+}
+.checkbox-rect2 input[type="checkbox"]:hover + label:before { 
+    border: 1px solid #343a3f;
+}
+.checkbox-rect2 input[type="checkbox"] + label:last-child {
+    margin-bottom: 0;
+}
+.checkbox-rect2 input[type="checkbox"] + label:before {
+    content: "";
+    display: block;
+    width: 1.4em;
+    height: 1.4em;
+    border: 1px solid #343a3f;
+    border-radius: 0.2em;
+    position: absolute;
+    left: 0;
+    top: 0;
+    -webkit-transition: all 0.2s, background 0.2s ease-in-out;
+    transition: all 0.2s, background 0.2s ease-in-out;
+    background: rgba(255, 255, 255, 0.03);
+    background: #f3f3f3;
+}
+.checkbox-rect2 input[type="checkbox"]:checked + label:before {
+    border: 2px solid #fff;
+    border-radius: 0.3em;
+    background: #50565a;
+}
+
+
+
+
+
+/* ====papercv========== */
+/* header */
+
+.papercv .header h1 {
+    @apply text-lg font-bold bg-blue-100 text-center my-4;
+}
+.papercv .header h2, .papercv h3 {
+    @apply mx-2;
+}
+.papercv .header h2 {
+    @apply font-semibold mt-3;
+}
+.papercv .header h3 {
+    @apply ml-3;
+}
+.header .comp {
+    @apply w-full h-5 bg-gray-200 mx-0.5;
+}
+.header .comp-select {
+    @apply bg-blue-400;
+}
+
+/* bodyer */
+.papercv .bodyer {
+
+}

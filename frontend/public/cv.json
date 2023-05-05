@@ -1,0 +1,90 @@
+[
+    [
+        {
+            "title": "Informations perso",
+            "Adresse": "30 chemin chevalier, 97435 île de la Réunion",
+            "Telephone": "06 93 48 50 85",
+            "Email": "vidalotvictor@gmail.com"
+        },
+        {
+            "title": "Langues étrangères",
+            "Anglais": 6,
+            "Espagnol": 3
+        },
+        {
+            "title": "Langages de programmation",
+            "HTML / CSS / JAVASCRIPT (React)": 7,
+            "Python": 6,
+            "C++": 3,
+            "Arduino": 7
+        }
+    ],
+    [
+        {
+            "title": "Formation",
+            "datas": [
+                {
+                   "year": "2020-2023",
+                   "title": "Futur Baccalauréat général (va être obtenu en 2023",
+                   "list": [
+                       "Spécialité 1: Mathématique",
+                       "Spécialité 2: Numérique et Science de l'Informatique",
+                       "Spécialité en première: Sciences de l'Ingénieur",
+                       "Option math expertes",
+                       "LV1 Anglais, LV2 Espagnol"
+                   ]
+               },
+               {
+                   "year": "2020",
+                   "title": "Brevet des collèges",
+                   "list": [
+                       "Admis avec mention très bien"
+                   ]
+               }
+            ]
+        },
+        {
+            "title": "Compétences",
+            "datas": [
+                {
+                   "list": [
+                       "Bases de données MySQL / MongoDB",
+                       "Fontionnement / montage d'ordinateurs",
+                       "Creation de mon site Web : vidalotvdt.fr",
+                       "Modélisation 3D"
+                   ]
+               }
+            ]
+        },
+        {
+            "title": "Centres d'intêret",
+            "datas": [
+                {
+                   "list": [
+                       "Programmation informatique (principalement en Reactjs)",
+                       "Electronique basique",
+                       "Electricité",
+                       "Réalisation du réseau éléctrique d'un fourgon aménagé"
+                   ]
+               }
+            ]            
+        },
+        {
+            "title": "Loisirs",
+            "datas": [
+                {
+                   "list": [
+                       "FabLab",
+                       "Plongée (niveau 1)",
+                       "Bricolage",
+                       "Montage de stands en bois pour vente de pain sur les marchés"
+                   ]
+               }
+            ]            
+        }
+    ],
+    [
+        "Recherche Alternance en Robotique pour 2ans",
+        "Vidalot Victor, 17ans, élève de terminale (spécialités NSI et Mathématiques avec option Math Expertes), année 2022-2023 au lycée Evariste de parny à St Paul (Ile de la Réunion), anglais (parlé et ecrit), Espagnol (notions)"
+    ]
+]

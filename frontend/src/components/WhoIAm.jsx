@@ -9,7 +9,6 @@ export default ({}) => {
     const load = useCallback(async ()=>{
         console.log('exe')
         setdatas(await globalServices.getwhoiamDatas())
-        console.log(datas)
     }, [])
     useEffect(()=>{
         load()
@@ -71,6 +70,7 @@ export default ({}) => {
                                 section.vid.map((path, index) => {
                                     return <video key={index} controls className="w-96 mb-1 mx-auto rounded-md" src={"./images/"+path}></video>
                                 })}
+                                {/* Cration de bouton selon fichier json dans lequel tout les textes et images y figurent */}
                                 {section.button && section.button.map((btn, index) => {
                                     return <a key={index} className="w-full bg-slate-50 dark:bg-slate-600 p-1 text-center font-medium text-lg mb-1 rounded-md shadow-md hover:bg-slate-200 hover:dark:bg-slate-400" href={btn.path}>{btn.name}</a>
                                 })}

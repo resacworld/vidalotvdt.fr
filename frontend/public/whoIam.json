@@ -8,56 +8,55 @@
         "sections": [
             {
                 "name": "Présentation",
-                "description": "Bonjour, je m'appelle victor vidalot, j'ai 16ans, je suis fais de la programmation depuis 5 ans, je code en html/css/javascript/reactjs/python/arduino et adore la domotique, je me debrouille donc aussi un peut en electronique",
+                "description": "Bonjour, je m'appelle Victor Vidalot, j'ai 18ans, je fais de la programmation depuis 6 ans, je code en html, css, javascript, reactjs, java (peu utilisé), python, c++ (principalement arduino), C#. Ayant une expérience dans une entreprise de robotique industrielle, je connais également de manière non exhaustive la programmation et le fonctionnement de robot, industriels ou non, et de différentes marques ( kuka, fanuc, doosan, etc.. ), ayant également une expérience dans la programmation en c# de logiciels de supervision de robots dans différentes utilisations et buts",
                 "img": ["screenshot.jpg"],
                 "screenshot": true
             },
             {
                 "name": "Diplômes",
-                "description": "je suis en Première générale avec spécialités Mathématiques et Numérique et scences Informatiques, ayant abandoné Sciences de l'Ingénieur lors de mon passage en terminale"
+                "description": "Je suis actuellement en DEUST IOSI 2A en alternance, faisant donc coté école des cours théorique et pratique comme par exemple de la programmation en java, en c++, des connaissances basiques en éléctronique, du management, de la mécanique. Coté entreprise ayant aidé a la programmation de robots industriels, dans la réalisation de trajectoires de robots de démo dans divers salons, dans la création de logiciels de supervision de robot dans le cadre de la réalisation de machines industrielles sur-mesures. Dans le cablage éléctrique, et le montage mécanique de ces mêmes machines"
             },
             {
-                "name": "Mes désirs",
-                "description": "A l'avenir j'aimerait devenir ingénieur en mécatronique afin de comprendre, etudier et réaliser les différentes machines plus ou moins complexes de notre monde, pour a l'avenir me concentrer sur les système de domotiques je pense aux robos automnomes fait a partir de machine learning qui pourront a l'avenir avoir beaucoup plus d'utilités qu'on ne le pense haujourd'hui, ou encore tous les systèmes automatiques d'une maison qui nous sont bien pratique, integrer votre ecole me permettrait d'apprendre les connaisances nessesaires sur les principes mécaniques, hydroliques, informatiques, les languages de programations de haut niveau comme python principalement pour le machine learning, le javascript,html,css pour la réalisation des sites web, pour aller j'usqu'au languages de bas niveau comme le c, c++ ou l'assembleur qui permettent de créer des systèmes d'exploitations."
+                "name": "Ma vision a cours terme",
+                "description": "Ma vision pour mon futur proche serait d'explorer les différents métiers et différents bureaux d'études ou autres dans le but de comprendre et d'enrichir mon expérience, que ce soit dans la réalisation de machine industrielles sur-mesure, de machines spécialisés dans un but expérimental. Continuer a apprendre et découvrir de nouvelles choses variés, de nouvelles technologies et de mettre en pratique plusieurs compétences simultanément tout au long de l'année sont des choses qui me poussent et me motivent a continuer dans cette lancée."
             }
         ]
     },
     {
-        "name": "Mes créations",
+        "name": "Mes Compétences",
         "title": true
     },
     {
-        "name": "Creations Electroniques",
+        "name": "Mon Alternance (2023-2025)",
         "sections": [
             {
-                "name": "1er bras electronique",
-                "description": "voici le 1er bras eletronique confectionnée par mes soins, comportant un bras en deux partie permettant une maniabilité minimale, concut a partir de bois, de 2 servo-moteur ainsi qu'un arduino leonardo, controllable grace a ses 2 potentiomètres",
-                "img": ["brasElec1.jpg"]
+                "name": "Mécanique",
+                "description": "Lors de cette alternance, j'ai participé a la création et le montage de machines mécanique, notament sur le montage mécanique, les déplacement et l'installation de robot dans divers environnements, ainsi que dans du montage mécanique plus traditionelles, notament dans le montage de divers éléments selon des plans préalablement définis."
             },
             {
-                "name": "2ème bras electronique",
-                "description": "voici le deuxième bras electronique confectionnée en bois plus léger, toujour controlée a l'aide d'un arduino aisni que de 3 servo moteur permettant une rotation a 180°",
-                "img":  ["brasElec2.jpg"]
+                "name": "Electricité",
+                "description": "J'ai acquis lors de cette alternance des compétences en electricité, dans le cablage d'alimentations, d'armoires electriques, d'entrées/sorties donc de capteurs, le cablage de capteurs de sécurités."
             },
             {
-                "name": "lumière automatique v1",
-                "description": "voici la première versio de ma lumière automatique, constituée d'une alimentation 5V 1.5A, alimentant une carte arduino nano permattant le controle du relay <<refrence>> faisant office d'interrupteur, 2 entrée y sont connecté afin d'activer le déclanchement du relay ou inversement afin d'allumer ou éteindre la lumière, la première est un capteur de distance <<refrence>> qui lorsque quelqu'un va passer devant va declancher l'allumage ou l'extinction de la lumière, la deuxième entrée est une led receptrice infrarouge réglée pour capter les signaux d'une telecomande (recuperée dans mes affaires) avec 2 touches : alummer ou eteindre représenté par le + ou le -",
-                "img": ["lumV1.0.jpg"]
+                "name": "Programmation Logicelle",
+                "description": "Cette alternance m'a permis d'acquerir le fonctionnement, les méthodes de travail et d'organisation du code dans un milieu professionel, dans le conception de code de manière professionelles."
             },
             {
-                "name": "lumière automatique v2.0",
-                "description": "voici la deuxième version de ma lumière automatique, ayant toujour le même système de fonctionnement, plus compatce et plus propre, a la différence qu'il n'y a qu'une entrée possible le recepteur radio <<reference>> multidirectionnel ainsi que sont emeteur connectée a un arduino muni d'un programme python réalisée par mes soins, le fonctionnement est simple je me connecte a un site web ebergée sur mon raspberry pi avec 2 boutons possibles allumer ou eteindre",
-                "img": ["lumV2.0.jpg"]
+                "name": "Programmation robot",
+                "description": "J'ai plusieurs fois et dans plusieurs buts différents, programmer des trajectoires de robot 6 axes, les 2 sujets principaux étant dans la programmation de trajectoires robot de démo a des fins de présentations dans divers salons, mais également dans la programation de trajectoires dans des machines industrielles diverses."
             },
             {
-                "name": "lumière automatique v2.1",
-                "description": "ceci est uen rectification de la version 2.0, deux problèmes majeurs : le recepteur radio dont est équipée mon inteerupteur marche mal, il ne receptionne qu'une fois sur 10 le message en plus du fait qu'il n'y a pas de callback de la part du recepteur, j'ai donc changée ce systeme est remis le système led receptrice infrarouge / telecommande mis a la version 1 qui elle est bien plus fiable",
-                "img": ["lumV2.1.jpg"]
+                "name": "Vision 3D",
+                "description": "Dans le cadre de mon alternance, nous avons souvent eue recours a du matériel de vision, dans le but de detecter certain objects, afin par la suite de l'envoyer au robot pour qu'il vienne effectuer une certaines tâche sur cette objet, comme du dévracage par exemple."
             }
         ]
     },
     {
-        "name": "Creations Informatiques",
+        "name": "Mes toutes premières créations",
+        "title": true
+    },
+    {
+        "name": "Créations Informatiques",
         "sections": [
             {
                 "name": "Ideas",
@@ -65,28 +64,11 @@
             },
             {
                 "name": "Projects",
-                "description": "Ce projet est en fait la nouvelle version du projet Ideas, simplement que celui-ci est codée en React, plus performant, et surtout correspondant beaucoup plus aux besoins nessesaire a la conception de ce projet si vous le souhaiter vous avez la possibilité d'avoir un apercu de ce project en clicant sur ce bouton",
-                "button": [
-                    {
-                        "name": "demo projects",
-                        "path":"https://projects.mekaneer.com"
-                    }
-                ]
+                "description": "Ce projet est en fait la nouvelle version du projet Ideas, simplement que celui-ci est codée en React, plus performant, et surtout correspondant beaucoup plus aux besoins nessesaire a la conception de ce projet. Le but principal résidant dans la création d'un logiciel d'y effectuer l'organisation et la gestion de projet."
             },
             {
                 "name": "HOUSEDOMO",
                 "description": "Voici mon projet de domotique, le principe est d'avoir une modelisation 3D de ma maison avec des elements 3D interatifs y permettant sont controler par l'intermediaire d'une section qui s'ouvre a la selection de l'element concernée, basée sur un systeme serveur/client, un site web fait en react et nodejs pour le serveur qui communiquera avec un arduino branchée sur la machine sur lequel le 'système du serveur' est installée"
-            }
-        ]
-    },
-    {
-        "name": "Autres compétences ...",
-        "sections": [
-            {
-                "name": "Vidéos de notre tournois",
-                "description": "voici notre robot (celui de couleur bleu) qui a malheuruesement rencontré un problème lors du math, mais j'ai quand même adoré participer a ce concours et ca me donne envie d'en refaire pour prendre ma revanche ( PS: désolé pour la qualité médiocre des vidéos mais je n'en ai pas de meillieur qualité )",
-                "img": ["photo_daniel.jpg", "robot.jpg"],
-                "vid": ["humiliation.mp4", "humiliation.mp4"]
             }
         ]
     }]

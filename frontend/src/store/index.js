@@ -1,4 +1,4 @@
-import { useReducer, createContext } from 'react'
+import { useReducer, createContext, useEffect } from 'react'
 import Reducer from "./reducers/index";
 import defaultState from './default.json'
 import GlobalServices from "../services/global-services"

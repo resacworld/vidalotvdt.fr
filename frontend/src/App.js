@@ -11,7 +11,6 @@ import { useContext } from "react";
 
 function App() {
   const [ state, dispatch ] = useContext(Context)
-  console.log(state)
   
   return (
       <div className={state.darkTheme?"dark":""}>

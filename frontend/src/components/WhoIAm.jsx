@@ -16,7 +16,7 @@ export default ({}) => {
     },[])
 
     return datas?(<div className="dark:text-slate-300">
-        <ul className="WhoIam-navbar overflow-y-scroll max-lg:hidden">
+        <ul className={"WhoIam-navbar overflow-y-scroll max-lg:hidden"  + (state.darkTheme?" dark-scrollbar":"")}>
             <li className="navbar-item shadow-sm bg-white dark:bg-slate-700 text-center">
                 <div className="mx-12"><img className="w-48 rounded-md" src="./images/screenshot.jpg" /></div> 
                 <h1 className="font-bold text-2xl" >Vidalot Victor</h1>
@@ -48,7 +48,7 @@ export default ({}) => {
                 </li>
             })}
         </ul>
-        <div className="bg-gray-100 dark:bg-gray-500 lg:fixed left-80 top-0 bottom-0 right-0 overflow-y-scroll scrollbar-1">
+        <div className={"bg-gray-100 dark:bg-gray-500 lg:fixed left-80 top-0 bottom-0 right-0 overflow-y-scroll scrollbar-1" + (state.darkTheme?" dark-scrollbar":"")}>
             {datas.map(creation => {
                 return <React.Fragment key={creation.name}>
                     <div className={"p-2 m-1 rounded-md text-center font-bold text-lg " + (creation.title?"text-xl my-3 py-4 bg-gray-300 dark:bg-slate-700":"bg-light-secondary dark:bg-dark")} id={creation.name}>
@@ -80,7 +80,7 @@ export default ({}) => {
                 </React.Fragment>
             })}
             <div className="p-2">
-                <h2 className="font-light text-center text-black black:text-white">	&#169; 2022 <a href="https://vidalotvdt.fr/" className="hover:underline">VIDALOTVDT&#8482;</a>. All Rights Reserved. </h2>
+                <h2 className="font-light text-center text-black black:text-white">	&#169; 2024 <a href="https://vidalotvdt.fr/" className="hover:underline">VIDALOTVDT&#8482;</a>. All Rights Reserved. </h2>
             </div>
         </div>
     </div>): (<div className="text-center font-medium text-lg rounded-lg p-7 min-w-[200px] fixed top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] bg-light dark:bg-dark dark:text-slate-400">

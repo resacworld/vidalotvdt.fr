@@ -21,13 +21,23 @@ body {
 
 /* =========SCROOLBAR OPTIONS============= */
 :root {
-    --primary: rgb(31 41 55);
-    --secondary: rgb(75 85 99);
+    --primary-dark: rgb(31 41 55);
+    --secondary-dark: rgb(75 85 99);
+
+    --primary: rgb(180 180 180);
+    --secondary: rgb(200 200 200);
+}
+
+.dark-scrollbar {
+    scrollbar-color: var(--secondary-dark) var(--primary-dark);
+}
+
+.light-scrollbar {
+    scrollbar-color: var(--secondary) var(--primary);
 }
 
 * {
     scrollbar-width: thin;
-    scrollbar-color: var(--secondary) var(--primary);
 }
 
 /* Chrome, Edge, and Safari */

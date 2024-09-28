@@ -2,8 +2,8 @@
     [
         {
             "title": "Informations perso",
-            "Adresse": "30 chemin chevalier, 97435 île de la Réunion",
-            "Telephone": "06 93 48 50 85",
+            "Adresse": "12 rue du haut roussillon, Canohès 66680",
+            "Telephone": "07 44 71 08 60",
             "Email": "vidalotvictor@gmail.com"
         },
         {
@@ -13,19 +13,18 @@
         },
         {
             "title": "Langages de programmation",
-            "HTML / CSS / JAVASCRIPT (React)": 7,
+            "ReactJS": 7,
             "Python": 6,
-            "C++": 3,
-            "Arduino": 7
+            "C#": 7
         }
     ],
     [
         {
-            "title": "Formation",
+            "title": "Formations",
             "datas": [
                 {
                    "year": "2020-2023",
-                   "title": "Futur Baccalauréat général (va être obtenu en 2023",
+                   "title": "Baccalauréat général",
                    "list": [
                        "Spécialité 1: Mathématique",
                        "Spécialité 2: Numérique et Science de l'Informatique",
@@ -35,23 +34,25 @@
                    ]
                },
                {
-                   "year": "2020",
-                   "title": "Brevet des collèges",
-                   "list": [
-                       "Admis avec mention très bien"
-                   ]
+                "year": "2023-2025",
+                "title": "Alternance DEUST IOSI",
+                "list": [
+                    "Develloppement robotique industrielle (Fanuc, Kuka, Doosan)",
+                    "Develloppement logiciels industriels (en C#)",
+                    "Câblage élétrique",
+                    "Montage mécanique"
+                ]
                }
             ]
         },
         {
-            "title": "Compétences",
+            "title": "Autres Compétences",
             "datas": [
                 {
                    "list": [
                        "Bases de données MySQL / MongoDB",
-                       "Fontionnement / montage d'ordinateurs",
-                       "Creation de mon site Web : vidalotvdt.fr",
-                       "Modélisation 3D"
+                       "Modélisation 3D",
+                       "Develloppement systèmes embarquées (amateur)"
                    ]
                }
             ]
@@ -61,9 +62,9 @@
             "datas": [
                 {
                    "list": [
-                       "Programmation informatique (principalement en Reactjs)",
-                       "Electronique basique",
-                       "Electricité",
+                       "Programmation informatique (nodejs, reactjs, C#)",
+                       "Creation de mon site Web : vidalotvdt.fr",
+                       "Electricité / Electronique basique",
                        "Réalisation du réseau éléctrique d'un fourgon aménagé"
                    ]
                }
@@ -76,15 +77,14 @@
                    "list": [
                        "FabLab",
                        "Plongée (niveau 1)",
-                       "Bricolage",
-                       "Montage de stands en bois pour vente de pain sur les marchés"
+                       "Bricolage / prototypage electronique"
                    ]
                }
             ]            
         }
     ],
     [
-        "Recherche Alternance en Robotique pour 2ans",
-        "Vidalot Victor, 17ans, élève de terminale (spécialités NSI et Mathématiques avec option Math Expertes), année 2022-2023 au lycée Evariste de parny à St Paul (Ile de la Réunion), anglais (parlé et ecrit), Espagnol (notions)"
+        "Recherche Alternance Robotique / systèmes embarquées et similaires pour license de 1ans",
+        "Victor Vidalot, 18ans, Actuellement en alternance a NOVALYNX un intégrateur d'innovations en robotique, je parle et j'écrit l'anglais, et j'ai des notions d'espagnol."
     ]
 ]

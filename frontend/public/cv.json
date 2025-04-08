@@ -2,26 +2,43 @@
     [
         {
             "title": "Informations perso",
-            "Adresse": "12 rue du haut roussillon, Canohès 66680",
             "Telephone": "07 44 71 08 60",
             "Email": "vidalotvictor@gmail.com"
         },
         {
             "title": "Langues étrangères",
-            "Anglais": 6,
-            "Espagnol": 3
+            "Anglais : B2": null
         },
         {
-            "title": "Langages de programmation",
-            "ReactJS": 7,
-            "Python": 6,
-            "C#": 7
+            "title": "Coding",
+            "images": [
+                "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg",
+                "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
+                "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
+                "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg",
+                "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
+                "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg",
+                "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flutter/flutter-original.svg",
+                "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg",
+                "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg",
+                "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original-wordmark.svg"
+            ]
         }
     ],
     [
         {
             "title": "Formations",
             "datas": [
+                {
+                    "year": "2023-2026",
+                    "title": "Alternance DEUST IOSI",
+                    "list": [
+                        "Developpement robots industriels (Fanuc, Kuka, Doosan)",
+                        "Developpement logiciels industriels (en C#)",
+                        "Câblage élétrique",
+                        "Montage mécanique"
+                    ]
+                },
                 {
                    "year": "2020-2023",
                    "title": "Baccalauréat général",
@@ -32,16 +49,6 @@
                        "Option math expertes",
                        "LV1 Anglais, LV2 Espagnol"
                    ]
-               },
-               {
-                "year": "2023-2025",
-                "title": "Alternance DEUST IOSI",
-                "list": [
-                    "Develloppement robotique industrielle (Fanuc, Kuka, Doosan)",
-                    "Develloppement logiciels industriels (en C#)",
-                    "Câblage élétrique",
-                    "Montage mécanique"
-                ]
                }
             ]
         },
@@ -50,22 +57,21 @@
             "datas": [
                 {
                    "list": [
-                       "Bases de données MySQL / MongoDB",
                        "Modélisation 3D",
-                       "Develloppement systèmes embarquées (amateur)"
+                       "Developpement systèmes embarqués (amateur)",
+                       "Impression 3D"
                    ]
                }
             ]
         },
         {
-            "title": "Centres d'intêret",
+            "title": "Centres d'intêrets",
             "datas": [
                 {
                    "list": [
-                       "Programmation informatique (nodejs, reactjs, C#)",
                        "Creation de mon site Web : vidalotvdt.fr",
-                       "Electricité / Electronique basique",
-                       "Réalisation du réseau éléctrique d'un fourgon aménagé"
+                       "Réalisation du réseau éléctrique d'un fourgon aménagé",
+                       "Domotique"
                    ]
                }
             ]            
@@ -77,14 +83,16 @@
                    "list": [
                        "FabLab",
                        "Plongée (niveau 1)",
-                       "Bricolage / prototypage electronique"
+                       "Bricolage / prototypage electronique",
+                       "Voile",
+                       "Running"
                    ]
                }
             ]            
         }
     ],
     [
-        "Recherche Alternance Robotique / systèmes embarquées et similaires pour license de 1ans",
-        "Victor Vidalot, 18ans, Actuellement en alternance a NOVALYNX un intégrateur d'innovations en robotique, je parle et j'écrit l'anglais, et j'ai des notions d'espagnol."
+        "Plaquette de présentation",
+        "Victor Vidalot, 19ans, actuellement en alternance a NOVALYNX, un intégrateur d'innovations en robotique, je parle et j'écris l'anglais."
     ]
 ]

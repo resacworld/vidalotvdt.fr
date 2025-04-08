@@ -8,6 +8,7 @@ export default ({}) => {
         console.log('exe')
         setdatas(await globalServices.getcvDatas())
         console.log(datas)
+
     }, [])
     useEffect(()=>{
         load()
@@ -18,7 +19,7 @@ export default ({}) => {
             console.log(page, index)
             if(index == 0){
                 return <div className="header bg-blue-50 w-72">
-                    <h1 className="text-xl font-bold m-2 text-center">Vidalot victor</h1>
+                    <h1 className="font-bold m-2 text-center">VIDALOT victor</h1>
                     <img src="./images/screenshot.jpg" className=" w-3/4 m-auto"/>
 
                     {
@@ -26,9 +27,14 @@ export default ({}) => {
                             var lst = []
                             for (const key in section){
                                 if(key === "title") lst.push(<h1 key={section[key]}>{section[key]}</h1>)
+                                else if(key === "images") lst.push(
+                                    <div className="flex flex-wrap justify-around">
+                                        {section[key].map((val) => <img key={val} src={val} className="w-16 h-16 m-2" />)}
+                                    </div>
+                                )
                                 else {
                                     lst.push(<h2 key={key}>{key}</h2>)
-                                    lst.push(<h3 key={key + section[key]}>{(typeof section[key] == "string")?section[key]: <Comp nb={section[key]}/>}</h3>)
+                                    if(section[key] != null) lst.push(<h3 key={key + section[key]}>{(typeof section[key] == "string")?section[key]: <Comp nb={section[key]}/>}</h3>)
                                 }
                             }
                             return lst

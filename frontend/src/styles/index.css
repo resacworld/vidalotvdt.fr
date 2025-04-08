@@ -549,6 +549,9 @@ video {
 .h-\[100vh\] {
   height: 100vh;
 }
+.h-16 {
+  height: 4rem;
+}
 .w-\[100vw\] {
   width: 100vw;
 }
@@ -557,6 +560,9 @@ video {
 }
 .w-3\/4 {
   width: 75%;
+}
+.w-16 {
+  width: 4rem;
 }
 .w-full {
   width: 100%;
@@ -592,6 +598,9 @@ video {
 }
 .justify-between {
   justify-content: space-between;
+}
+.justify-around {
+  justify-content: space-around;
 }
 .place-self-center {
   place-self: center;
@@ -704,10 +713,6 @@ video {
   --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-.backdrop-blur-sm {
-  --tw-backdrop-blur: blur(4px);
-  backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 }
 
 body {
@@ -869,14 +874,13 @@ border: 3px solid var(--primary);
 /* header */
 
 .papercv .header h1 {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  --tw-bg-opacity: 1;
-  background-color: rgb(219 234 254 / var(--tw-bg-opacity));
-  text-align: center;
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-  font-weight: 700;
+    /* @apply text-lg font-bold bg-blue-100 text-center my-4; */
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    font-weight: 700;
 }
 .papercv .header h2, .papercv h3 {
   margin-left: 0.5rem;
@@ -890,14 +894,22 @@ border: 3px solid var(--primary);
   margin-left: 0.75rem;
 }
 .header .comp {
-  margin-left: 0.125rem;
-  margin-right: 0.125rem;
   height: 1.25rem;
   width: 100%;
-  border-radius: 0.125rem;
   --tw-bg-opacity: 1;
   background-color: rgb(229 231 235 / var(--tw-bg-opacity));
 }
+
+.header .comp:last-child {
+  border-top-right-radius: 0.125rem;
+  border-bottom-right-radius: 0.125rem;
+}
+
+.header .comp:first-child {
+  border-top-left-radius: 0.125rem;
+  border-bottom-left-radius: 0.125rem;
+}
+
 .header .comp-select {
   --tw-bg-opacity: 1;
   background-color: rgb(96 165 250 / var(--tw-bg-opacity));

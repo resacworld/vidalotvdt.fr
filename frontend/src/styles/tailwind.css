@@ -128,7 +128,8 @@ border: 3px solid var(--primary);
 /* header */
 
 .papercv .header h1 {
-    @apply text-lg font-bold bg-blue-100 text-center my-4;
+    /* @apply text-lg font-bold bg-blue-100 text-center my-4; */
+    @apply text-lg font-bold text-center my-4;
 }
 .papercv .header h2, .papercv h3 {
     @apply mx-2;
@@ -140,8 +141,17 @@ border: 3px solid var(--primary);
     @apply ml-3;
 }
 .header .comp {
-    @apply w-full h-5 bg-gray-200 mx-0.5 rounded-sm;
+    @apply w-full h-5 bg-gray-200;
 }
+
+.header .comp:last-child {
+    @apply rounded-tr-sm rounded-br-sm;
+}
+
+.header .comp:first-child {
+    @apply rounded-tl-sm rounded-bl-sm;
+}
+
 .header .comp-select {
     @apply bg-blue-400;
 }

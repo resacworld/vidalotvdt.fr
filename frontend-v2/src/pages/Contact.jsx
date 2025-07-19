@@ -14,7 +14,7 @@ const Contact = () => {
 			}}
 			className="container mx-auto flex flex-col-reverse lg:flex-row py-5 lg:py-10 lg:mt-10"
 		>
-			<ContactForm />
+			{/* <ContactForm /> */}
 			<ContactDetails />
 		</motion.div>
 	);

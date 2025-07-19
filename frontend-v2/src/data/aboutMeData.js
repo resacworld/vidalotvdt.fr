@@ -1,10 +1,18 @@
 export const aboutMeData = [
 	{
 		id: 1,
-		bio: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt totam dolorum, ducimus obcaecati, voluptas facilis molestias nobis ut quam natus similique inventore excepturi optio ipsa deleniti fugit illo. Unde, amet! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum illo necessitatibus perspiciatis! Aperiam perferendis labore temporibus, eos culpa corporis recusandae quas, fuga voluptatibus nesciunt odit libero tenetur neque consequatur ea.',
+		bio: 'Hello, My name is Victor VIDALOT,'
 	},
 	{
 		id: 2,
-		bio: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta?',
+		bio: "I'm a developer for 2 years, and as a full-stack developer, creating a server with a 3-tier architecture, with all required integration for a web application (database, api, security, login, jwt, etc...), which includes a frontend made with react.js (or somethinf else) is in my area of expertise",
+	},
+	{
+		id: 3,
+		bio: 'I am currently in a work-study program at Novalynx, where i assist for creating industrial supervisors, which are used to control the machines created by my company.',
+	},
+	{
+		id: 4,
+		bio: 'I am passionate about programming and I love to learn new technologies and improve my skills and always looking for new challenges and opportunities to grow as a developer.',
 	},
 ];

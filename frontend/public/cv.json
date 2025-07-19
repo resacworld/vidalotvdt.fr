@@ -2,6 +2,7 @@
     [
         {
             "title": "Informations perso",
+            "Adresse": "12 rue du haut roussillon",
             "Telephone": "07 44 71 08 60",
             "Email": "vidalotvictor@gmail.com"
         },
@@ -17,6 +18,7 @@
                 "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
                 "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg",
                 "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
+                "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg",
                 "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg",
                 "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flutter/flutter-original.svg",
                 "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg",
@@ -31,7 +33,7 @@
             "datas": [
                 {
                     "year": "2023-2026",
-                    "title": "Alternance DEUST IOSI",
+                    "title": "Alternance NOVALYNX / Cnam occitanie DEUST IOSI",
                     "list": [
                         "Developpement robots industriels (Fanuc, Kuka, Doosan)",
                         "Developpement logiciels industriels (en C#)",
@@ -71,7 +73,7 @@
                    "list": [
                        "Creation de mon site Web : vidalotvdt.fr",
                        "Réalisation du réseau éléctrique d'un fourgon aménagé",
-                       "Réalisation d'un système Domotique (application flutter + serveur nodejs)"
+                       "Réalisation d'un système domotique (application flutter + serveur nodejs)"
                    ]
                }
             ]            

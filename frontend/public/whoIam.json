@@ -48,11 +48,15 @@
             {
                 "name": "Vision 3D",
                 "description": "Dans le cadre de mon alternance, nous avons souvent eue recours a du matériel de vision, dans le but de detecter certain objects, afin par la suite de l'envoyer au robot pour qu'il vienne effectuer une certaines tâche sur cette objet, comme du dévracage par exemple."
+            },
+            {
+                "name": "Programmation web",
+                "description": "J'ai a plusieurs reprise eu recours a la programmation web, pour le moment uniquement dans un cadre amateur ou non déployé en production, j'ai cepandant une certaine expérience dans ce domaine, que ce soit coté serveur avec la sécurité des données et des attaques basiques ou du coté frontend, que ce soit en javascript, typescript, react ou autre framework javascript, j'ai également depuis peu des connaissances en flutter et en dart ce qui me permet de developper une application disponible sur plusieurs plateformes, notament android et ios."
             }
         ]
     },
     {
-        "name": "Mes toutes premières créations",
+        "name": "Mes créations",
         "title": true
     },
     {
@@ -69,6 +73,11 @@
             {
                 "name": "HOUSEDOMO",
                 "description": "Voici mon projet de domotique, le principe est d'avoir une modelisation 3D de ma maison avec des elements 3D interatifs y permettant sont controler par l'intermediaire d'une section qui s'ouvre a la selection de l'element concernée, basée sur un systeme serveur/client, un site web fait en react et nodejs pour le serveur qui communiquera avec un arduino branchée sur la machine sur lequel le 'système du serveur' est installée"
-            }
+            },
+            {       
+                "name": "CASE",
+                "description": "Voici mon projet actuel, un autre système domotique, mais complètement recrée de zero, cette fois avec une approche profesionelle de par mon expéreince, ce projet est concu de manière a pouvoir contrôler les différents élément de la maison a travers un plan interactif 2D de la maison (bientôt en 3D), concut sur un système serveur/client, un sereur créer en nodejs avec une base de donnée mongodb et une application créer en flutter, ce qui peremt d'avoir un client sur plsuieurs plateformes a la fois, notament sous forme d'application android d'ou ce choix plutot que reactjs avec lequel j'ai plus d'expérience"
+            } 
         ]
-    }]
+    }
+]

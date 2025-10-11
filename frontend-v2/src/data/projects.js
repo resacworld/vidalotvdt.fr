@@ -13,6 +13,8 @@ import TrajectorySoftware from "./projects/TrajectorySoftware"
 import IndusSoftware from './projects/IndusSoftware';
 import FirstStYearIntegrationProject from './projects/1stYearIntegrationProject';
 import SecondYearIntegrationProject from './projects/2ndYearIntegrationProject'
+import SmartAssistant from './projects/SmartAssistant';
+import RobotProgrammation from './projects/RobotProgrammation';
 
 import categories from '../utils/categories';
 
@@ -22,7 +24,8 @@ export const projectsData = [
 		title: 'Industrial robot trajectory calculation software',
 		category: categories.SoftDev,
 		img: AllThree,
-		singleProjectData: TrajectorySoftware
+		singleProjectData: TrajectorySoftware,
+		hide : true
 	},
 	{
 		id: 1,
@@ -35,6 +38,7 @@ export const projectsData = [
 		id: 2,
 		title: "6axis robot programmation",
 		category: categories.SoftDev,
+		singleProjectData: RobotProgrammation,
 		img: robotkukaImage
 	},
 	{
@@ -55,18 +59,19 @@ export const projectsData = [
 		id: 5,
 		title: "Smart chat assistant to easly learn french-canadian",
 		category: categories.WebApp,
-		img: SmartAssiantImage
+		img: SmartAssiantImage,
+		singleProjectData: SmartAssistant
 	},
-	{
-		id: 6,
-		title: "My portfolio page (this one)",
-		category: categories.DevOps,
-		img: portfolioImage
-	},
-	{
-		id: 7,
-		title: "Full home automation system (not finished)",
-		category: categories.Backend,
-		img: CASEAPPImage
-	}
+	// {
+	// 	id: 6,
+	// 	title: "My portfolio page (this one)",
+	// 	category: categories.DevOps,
+	// 	img: portfolioImage
+	// },
+	// {
+	// 	id: 7,
+	// 	title: "Full home automation system (not finished)",
+	// 	category: categories.Backend,
+	// 	img: CASEAPPImage
+	// }
 ];

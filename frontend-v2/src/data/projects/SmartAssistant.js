@@ -54,7 +54,11 @@ export default {
 			},
 			{
 				id: 1,
-				details: "",
+				details: "the first goal was to create a web-based prototype that helps me hold live conversations with French speakers, with a focus on Canadian French, a clear interface, and a user-friendly experience.",
+			},
+			{
+				id: 2,
+				details: "The second goal was to create a chat assistant that can speak and learn canadian-french to the user, using the chatgpt API, by a chat split in two parts: the french side and english side, the two chat are the same, just traduced in the two langages.",
 			}
 		],
 	},

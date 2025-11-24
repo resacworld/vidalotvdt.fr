@@ -14,12 +14,13 @@ function App() {
   
   return (
       <div className={state.darkTheme?"dark":""}>
-        <Router hashType="noslash">
+        <PaperCv />
+        {/* <Router hashType="noslash">
           <Routes>
             <Route path="/" element={<WhoIAm />} />
             <Route path="/papercv" element={<PaperCv />} />
           </Routes>
-        </Router>
+        </Router> */}
       </div>
   );
 }

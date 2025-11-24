@@ -2,13 +2,14 @@
     [
         {
             "title": "Informations perso",
-            "Adresse": "12 rue du haut roussillon",
+            "Adresse": "12 rue du haut roussillon, Canohès, 66680",
             "Telephone": "07 44 71 08 60",
             "Email": "vidalotvictor@gmail.com"
         },
         {
             "title": "Langues étrangères",
-            "Anglais : B2": null
+            "Anglais : B2": null,
+            "Espagnol : A2": null
         },
         {
             "title": "Coding",
@@ -32,26 +33,24 @@
             "title": "Formations",
             "datas": [
                 {
-                    "year": "2023-2026",
-                    "title": "Alternance NOVALYNX / Cnam occitanie DEUST IOSI",
+                    "year": "2025-2026",
+                    "title": "Alternance NOVALYNX / Cnam occitanie LICENCE informatique générale",
+                    "list": [
+                        "Developpement robots industriels (Fanuc, Kuka, Doosan)",
+                        "Developpement logiciels industriels (en C#)",
+                        "Gestion de la relation client"
+                    ]
+                },
+                {
+                    "year": "2023-2025",
+                    "title": "Alternance NOVALYNX / Imerir, CNAM DEUST IOSI",
                     "list": [
                         "Developpement robots industriels (Fanuc, Kuka, Doosan)",
                         "Developpement logiciels industriels (en C#)",
                         "Câblage élétrique",
                         "Montage mécanique"
                     ]
-                },
-                {
-                   "year": "2020-2023",
-                   "title": "Baccalauréat général",
-                   "list": [
-                       "Spécialité 1: Mathématique",
-                       "Spécialité 2: Numérique et Science de l'Informatique",
-                       "Spécialité en première: Sciences de l'Ingénieur",
-                       "Option math expertes",
-                       "LV1 Anglais, LV2 Espagnol"
-                   ]
-               }
+                }
             ]
         },
         {
@@ -60,8 +59,9 @@
                 {
                    "list": [
                        "Modélisation 3D",
-                       "Developpement systèmes embarqués (amateur)",
-                       "Impression 3D"
+                       "Developpement systèmes embarqués",
+                       "Impression 3D",
+                       "Réseaux informatiques"
                    ]
                }
             ]
@@ -73,7 +73,7 @@
                    "list": [
                        "Creation de mon site Web : vidalotvdt.fr",
                        "Réalisation du réseau éléctrique d'un fourgon aménagé",
-                       "Réalisation d'un système domotique (application flutter + serveur nodejs)"
+                       "Milieu aquatique et marin"
                    ]
                }
             ]            
@@ -83,9 +83,9 @@
             "datas": [
                 {
                    "list": [
-                       "FabLab",
                        "Plongée (niveau 1)",
-                       "Bricolage / prototypage electronique",
+                       "Guitare",
+                       "Bricolage",
                        "Voile",
                        "Running"
                    ]
@@ -95,6 +95,6 @@
     ],
     [
         "Plaquette de présentation",
-        "Victor Vidalot, 19ans, actuellement en alternance a NOVALYNX, un intégrateur d'innovations en robotique, je parle et j'écris l'anglais."
+        "Victor Vidalot, 20ans, actuellement en alternance chez NOVALYNX, un intégrateur d'innovations en robotique, dans le cadre de ma licence en informatique générale au CNAM perpignan (créee cette année) je parle et j'écris l'anglais."
     ]
 ]

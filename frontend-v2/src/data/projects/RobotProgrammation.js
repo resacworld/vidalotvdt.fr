@@ -4,23 +4,23 @@ import categories from '../../utils/categories';
 
 export default {
 	ProjectHeader: {
-		title: '6 axis robot programmation',
-		publishDate: 'Aug 2023 - Jul 2026',
+		title: 'Programmation de robot 6 axes',
+		publishDate: 'Aout 2023 - Juil 2026',
 		tags: categories.SoftDev,
 	},
 	ProjectImages: [
 		{
 			id: 0,
-			title: 'KUKA industrial robot',
+			title: 'Robot industriel KUKA',
 			img: robotkukaImage,
 		},
 	],
 	ProjectInfo: {
-		ClientHeading: 'About Company I worked for',
+		ClientHeading: 'À propos de l\'entreprise pour laquelle j\'ai travaillé',
 		CompanyInfo: [
 			{
 				id: 0,
-				title: 'Name',
+				title: 'Nom',
 				details: 'Novalynx',
 			},
 			{
@@ -30,24 +30,24 @@ export default {
 			},
 			{
 				id: 2,
-				title: 'Website',
+				title: 'Site web',
 				details: 'https://novalynx.fr',
 			},
 			{
 				id: 3,
-				title: 'Phone',
+				title: 'Téléphone',
 				details: ' +33 (0) 9 72 44 69 71',
 			},
 			{
 				id: 4,
-				title: 'My position',
+				title: 'Ma situation',
 				details: "Alternant"
 			}
 		],
-		ObjectivesHeading: 'Objective',
-		ObjectivesDetails: "Programming of industrial robots, in order to automate tasks such as welding, painting, or assembly.",
+		ObjectivesHeading: 'Objectif',
+		ObjectivesDetails: "Programmation de robots industriels, afin d'automatiser des tâches telles que le soudage, la peinture ou l'assemblage.",
 		Technologies: {
-			title: 'Tools & Technologies',
+			title: 'Outils & Technologies',
 			techs: [
 				'C#',
 				'Visual Studio',
@@ -55,24 +55,24 @@ export default {
 				'RoboDK',
 			],
 		},
-		ProjectDetailsHeading: 'Challenge',
+		ProjectDetailsHeading: 'Défis',
 		ProjectDetails: [
 			{
 				id: 0,
-				details: "I do this projet as work-study student, at this moment in my company 'Novalynx'",
+				details: "Je réalise ce projet en tant qu'étudiant en alternance, à ce moment-là dans ma société 'Novalynx'",
 			},
 			{
 				id: 1,
-				details: "Industrial robots are used in many industries, such as automotive, aerospace, and electronics. They can perform tasks such as welding, painting, assembly, and material handling. However, programming these robots can be complex and time-consuming.",
+				details: "Les robots industriels sont utilisés dans de nombreuses industries, telles que l'automobile, l'aérospatiale et l'électronique. Ils peuvent effectuer des tâches telles que le soudage, la peinture, l'assemblage et la manutention de matériaux. Cependant, la programmation de ces robots peut être complexe et prendre du temps.",
 			},
 			{
 				id: 2,
-				details: "I can program industrial robots using KUKA Robot Language (KRL) and C#. I can also use RoboDK to simulate and optimize the robot's movements. This allows me to create efficient and reliable programs for the robots, that can be usefull to industrial companies.",
+				details: "Je peux programmer des robots industriels en utilisant le KUKA Robot Language (KRL) et le C#. Je peux également utiliser RoboDK pour simuler et optimiser les mouvements du robot. Cela me permet de créer des programmes efficaces et fiables pour les robots, qui peuvent être utiles aux entreprises industrielles.",
 			}
 		],
 	},
 	RelatedProject: {
-		title: 'Related Projects',
+		title: 'Projets liés',
 		Projects: [0, 1, 2],
 	},
 };

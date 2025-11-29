@@ -25,7 +25,7 @@ const ProjectsFilter = ({ setSelectProject }) => {
             "
 		>
 			<option value={"All Projects"} className="text-sm sm:text-md">
-				All Projects
+				Tous les projets
 			</option>
 
 			{selectOptions.map((option) => (

@@ -20,7 +20,7 @@ const AppFooterCopyright = () => {
 				</a>
 				<span
 					className="ml-1"
-				>design made by</span>
+				>design créer par</span>
 				<a
 					href="https://stoman.me"
 					target="__blank"

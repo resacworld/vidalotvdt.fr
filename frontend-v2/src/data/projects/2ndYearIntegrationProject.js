@@ -4,55 +4,50 @@ import categories from '../../utils/categories';
 
 export default {
 	ProjectHeader: {
-		title: '2nd Year integration project',
+		title: 'Projet d\'intégration 2ème année',
 		publishDate: 'Jul 2025',
 		tags: categories.WebApp,
 	},
 	ProjectImages: [
 		{
 			id: 0,
-			title: 'Screenshot of one part of my 2nd year integration project',
+			title: 'Image d\'un extrait de mon projet d\'intégration de 2ème année',
 			img: SecondYearIntegrationProject,
 		},
 	],
 	ProjectInfo: {
-		ClientHeading: 'About my school',
+		ClientHeading: 'A propos de mon école',
 		CompanyInfo: [
 			{
 				id: 0,
-				title: 'Name',
+				title: 'Nom',
 				details: 'Imerir / Cnam occitanie',
 			},
 			{
 				id: 1,
-				title: 'Website',
+				title: 'Site internet',
 				details: 'https://imerir.com',
 			},
 			{
 				id: 2,
-				title: 'Website',
+				title: 'Site internet',
 				details: 'https://www.cnam-occitanie.fr/',
 			},
 			{
-				id: 3,
-				title: "Imerir's Phone",
-				details: '+33 (0) 4 68 56 80 18',
-			},
-			{
 				id: 4,
-				title: "Cnam's Phone",
+				title: "Téléphone du Cnam",
 				details: '+33 (0) 4 67 63 63 40',
 			},
 			{
 				id: 5,
-				title: 'My position',
-				details: "work-study"
+				title: 'Ma situation',
+				details: "Alternant"
 			}
 		],
-		ObjectivesHeading: 'Objective',
-		ObjectivesDetails: "Create a smart weather station",
+		ObjectivesHeading: 'Objectif',
+		ObjectivesDetails: "Créer une station météo intelligente",
 		Technologies: {
-			title: 'Tools & Technologies',
+			title: 'Outils & Technologies',
 			techs: [
 				'Java',
 				'Javascript',
@@ -62,29 +57,29 @@ export default {
 				'Electronics'
 			],
 		},
-		ProjectDetailsHeading: 'Challenge',
+		ProjectDetailsHeading: 'Défis',
 		ProjectDetails: [
 			{
 				id: 0,
-				details: "I realized this project when i was work-study student, currently at my school 'Imerir'",
+				details: "J'ai réalise ce projet quand j'était étudiant en alternance à l'IMERIR, dans le cadre de mon cursus en 2ème année d'école d'ingénieur en informatique / robotique.",
 			},
 			{
 				id: 1,
-				details: `The goal of this project was to create from scratch a bunch of applications using several programmation langages. There were a backend server were all the missions are stored, and robot (made by us) that pick the data from the server and will move to execute his mission (drag and drop cubes). So in this project there were a mecanical part (made by my colleage) and the developpement part (mostly made by me). For the developmment, there were 3 applications to made :`
+				details: "Le but de ce projet était de créer à partir de zéro une série d'applications utilisant plusieurs langages de programmation. Il y avait un serveur backend où toutes les missions étaient stockées, et un robot (construit par nous) qui récupérait les données du serveur et se déplaçait pour exécuter sa mission (déplacer des cubes). Ainsi, dans ce projet, il y avait une partie mécanique (réalisée par mon collègue) et la partie développement (principalement réalisée par moi). Pour le développement, il y avait 3 applications à réaliser :"
 			},
 			{
 				id: 2,
 				details: [
-					"The on-board system of the robot (esp32), connected by wifi to server, waiting for the next mission",
-					"The backend, made in python / fastapi were all the data are stored and contralized, with an API to add/remove/get mission(s)",
-					"The frontend, made in pure HTML / CSS (as the specifications), but also in Vite.js + React, were we can see the history and future misisons of all movement of the robot",
-					"The simulator made in Java, that emulate the physical robot, in case he can't proccess"
+					"Le Système embarqué du robot (esp32), connecté en wifi au serveur, en attente de la prochaine mission",
+					"Le backend, réalisé en python / fastapi où toutes les données sont stockées et contrôlées, avec une API pour ajouter/supprimer/obtenir des missions",
+					"Le frontend, réalisé en HTML / CSS pur (selon les spécifications), mais aussi en Vite.js + React, où l'on peut voir l'historique et les futures missions de tous les déplacements du robot",
+					"Le simulateur réalisé en Java, qui émule le robot physique, au cas où il ne pourrait pas traiter"
 				]
 			}
 		],
 	},
 	RelatedProject: {
-		title: 'Related Projects',
+		title: 'Projets liées',
 		Projects: [0, 1, 2],
 	},
 };

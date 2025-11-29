@@ -1,18 +1,18 @@
 export const aboutMeData = [
 	{
 		id: 1,
-		bio: 'Hello, My name is Victor VIDALOT,'
+		bio: 'Bonjour, mon nom est Victor VIDALOT,'
 	},
 	{
 		id: 2,
-		bio: "I'm a developer for 2 years, and as a full-stack developer, creating a server with a 3-tier architecture, with all required integration for a web application (database, api, security, login, jwt, etc...), which includes a frontend made with react.js (or somethinf else) is in my area of expertise",
+		bio: "Je suis développeur depuis 2 ans, et en tant que développeur full-stack, créer un serveur avec une architecture 3-tiers, avec toutes les intégrations requises pour une application web (base de données, api, sécurité, login, jwt, etc...), qui inclut un frontend fait avec react.js (ou autre chose) est dans mon domaine de compétence",
 	},
 	{
 		id: 3,
-		bio: 'I am currently in a work-study program at Novalynx, where i assist for creating industrial supervisors, which are used to control the machines created by my company.',
+		bio: "Je suis actuellement en alternance chez Novalynx, où j'aide à la création de superviseurs industriels, qui sont utilisés pour contrôler les machines créées par mon entreprise.",
 	},
 	{
 		id: 4,
-		bio: 'I am passionate about programming and I love to learn new technologies and improve my skills and always looking for new challenges and opportunities to grow as a developer.',
+		bio: 'Je suis passionné par la programmation, la mécanique, l\'hydrolique et j\'adore apprendre de nouvelles technologies et améliorer mes compétences et toujours à la recherche de nouveaux défis et opportunités pour grandir en tant que développeur.',
 	},
 ];

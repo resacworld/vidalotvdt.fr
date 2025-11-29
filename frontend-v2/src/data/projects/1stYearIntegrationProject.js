@@ -4,55 +4,50 @@ import categories from '../../utils/categories';
 
 export default {
 	ProjectHeader: {
-		title: '1st Year integration project',
-		publishDate: 'Jul 2024',
+		title: 'Projet d \'integration 1ère année',
+		publishDate: 'Juil 2024',
 		tags: categories.WebApp,
 	},
 	ProjectImages: [
 		{
 			id: 0,
-			title: 'Screenshot of one part of my 1st year integration project',
+			title: 'Image d\'un extrait de mon projet d\'intégration de 1ère année',
 			img: IntegrationProjectY1,
 		},
 	],
 	ProjectInfo: {
-		ClientHeading: 'About my school',
+		ClientHeading: 'A propos de mon école',
 		CompanyInfo: [
 			{
 				id: 0,
-				title: 'Name',
+				title: 'Nom',
 				details: 'Imerir / Cnam occitanie',
 			},
 			{
 				id: 1,
-				title: 'Website',
+				title: 'Site internet',
 				details: 'https://imerir.com',
 			},
 			{
 				id: 2,
-				title: 'Website',
+				title: 'Site internet',
 				details: 'https://www.cnam-occitanie.fr/',
 			},
 			{
-				id: 3,
-				title: "Imerir's Phone",
-				details: '+33 (0) 4 68 56 80 18',
-			},
-			{
 				id: 4,
-				title: "Cnam's Phone",
+				title: "Téléphone du Cnam",
 				details: '+33 (0) 4 67 63 63 40',
 			},
 			{
 				id: 5,
-				title: 'My position',
-				details: "work-study"
+				title: 'Ma situation',
+				details: "Alternant"
 			}
 		],
-		ObjectivesHeading: 'Objective',
-		ObjectivesDetails: "Create a smart weather station",
+		ObjectivesHeading: 'Objectif',
+		ObjectivesDetails: "Créer une station météo intelligente",
 		Technologies: {
-			title: 'Tools & Technologies',
+			title: 'Outils & Technologies',
 			techs: [
 				'Java',
 				'Javascript',
@@ -65,20 +60,20 @@ export default {
 				'Electronics'
 			],
 		},
-		ProjectDetailsHeading: 'Challenge',
+		ProjectDetailsHeading: 'Défis relevés',
 		ProjectDetails: [
 			{
 				id: 0,
-				details: "I realized this project when i was work-study student, currently at my school 'Imerir'",
+				details: "J'ai réalise ce projet quand j'était étudiant en alternance à l'IMERIR, dans le cadre de mon cursus en 1ère année d'école d'ingénieur en informatique / robotique.",
 			},
 			{
 				id: 1,
-				details: "The goal of this project was to create from scratch a DIY weather station by team, in my team i was choosen to devellop the whole project, split in 3 section, the backend server, made wih node.js, the frontend, made with Vite.js + React.js, and the code of the arduino, were all the sensors was plugged, at the end with all elements communicated to each other, created our 1st year integration project",
+				details: "Le but de ce projet était de créer à partir de zéro une station météo DIY en équipe, dans mon équipe j'ai été choisi pour développer l'ensemble du projet, divisé en 3 sections, le serveur backend, réalisé avec node.js, le frontend, réalisé avec Vite.js + React.js, et le code de l'arduino, où tous les capteurs étaient branchés, à la fin avec tous les éléments communiquant entre eux, nous avons créé notre projet d'intégration de 1ère année.",
 			}
 		],
 	},
 	RelatedProject: {
-		title: 'Related Projects',
+		title: 'Projets liées',
 		Projects: [0, 1, 2],
 	},
 };

@@ -21,7 +21,7 @@ import categories from '../utils/categories';
 export const projectsData = [
 	{
 		id: 0,
-		title: 'Industrial robot trajectory calculation software',
+		title: 'Logiciel de calcul de trajectoire pour robot industriel',
 		category: categories.SoftDev,
 		img: AllThree,
 		singleProjectData: TrajectorySoftware,
@@ -29,48 +29,48 @@ export const projectsData = [
 	},
 	{
 		id: 1,
-		title: "Industrial supervision software",
+		title: "Logiciel de supervision industriel",
 		category: categories.SoftDev,
 		img: SimulatorImage,
 		singleProjectData: IndusSoftware
 	},
 	{
 		id: 2,
-		title: "6axis robot programmation",
+		title: "Programmation de robot 6axes",
 		category: categories.SoftDev,
 		singleProjectData: RobotProgrammation,
 		img: robotkukaImage
 	},
 	{
 		id: 3,
-		title: "1st Year integration project",
+		title: "Projet d'intégration 1ère année",
 		category: categories.WebApp,
 		singleProjectData: FirstStYearIntegrationProject,
 		img: IntegrationProjectY1
 	},
 	{
 		id: 4,
-		title: "2nd Year integration project",
+		title: "Projet d'intégration 2ème année",
 		category: categories.WebApp,
 		singleProjectData: SecondYearIntegrationProject,
 		img: IntegrationProjectY2
 	},
 	{
 		id: 5,
-		title: "Smart chat assistant to easly learn french-canadian",
+		title: "Assistant intelligent pour apprendre facilement le français-canadien",
 		category: categories.WebApp,
 		img: SmartAssiantImage,
 		singleProjectData: SmartAssistant
 	},
 	// {
 	// 	id: 6,
-	// 	title: "My portfolio page (this one)",
+	// 	title: "Mon portfolio personnel",
 	// 	category: categories.DevOps,
 	// 	img: portfolioImage
 	// },
 	// {
 	// 	id: 7,
-	// 	title: "Full home automation system (not finished)",
+	// 	title: "Application d'automatisation de maisonn, de domotique (non finis)",
 	// 	category: categories.Backend,
 	// 	img: CASEAPPImage
 	// }

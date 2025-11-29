@@ -4,40 +4,40 @@ import categories from '../../utils/categories';
 
 export default {
 	ProjectHeader: {
-		title: 'Smart chat assistant to easly learn french-canadian',
-		publishDate: 'Jul 2024',
+		title: 'Chat intelligent pour apprendre facilement le français-canadien',
+		publishDate: 'Juil 2024',
 		tags: categories.WebApp,
 	},
 	ProjectImages: [
 		{
 			id: 0,
-			title: 'Screen of the chat assistant',
+			title: 'Écran de l\'assistant de chat',
 			img: SmartAssiantImage,
 		},
 	],
 	ProjectInfo: {
-		ClientHeading: 'About my school',
+		ClientHeading: 'À propos la plateforme pour laquelle j\'ai travaillé',
 		CompanyInfo: [
 			{
 				id: 0,
-				title: 'Name',
+				title: 'Nom',
 				details: 'Upwork',
 			},
 			{
 				id: 1,
-				title: 'Website',
+				title: 'Site web',
 				details: 'https://upwork.com',
 			},
 			{
 				id: 5,
-				title: 'My position',
-				details: "Freelancer"
+				title: 'My situation',
+				details: "Freelance"
 			}
 		],
-		ObjectivesHeading: 'Objective',
-		ObjectivesDetails: "Design and create a chat with a smart assistant, powered by chatgpt, to learn canadian-french",
+		ObjectivesHeading: 'Objectif',
+		ObjectivesDetails: "Concevoir et créer un chat avec un assistant intelligent, propulsé par chatgpt, pour apprendre le français-canadien",
 		Technologies: {
-			title: 'Tools & Technologies',
+			title: 'Outils & Technologies',
 			techs: [
 				'Javascript',
 				'Nodejs',
@@ -46,24 +46,24 @@ export default {
 				'Visual Studio Code',
 			],
 		},
-		ProjectDetailsHeading: 'Challenge',
+		ProjectDetailsHeading: 'Défis',
 		ProjectDetails: [
 			{
 				id: 0,
-				details: "I realized this project as a freelancer on 'upwork'",
+				details: "Je réalise ce projet en tant que freelance sur 'upwork'",
 			},
 			{
 				id: 1,
-				details: "the first goal was to create a web-based prototype that helps me hold live conversations with French speakers, with a focus on Canadian French, a clear interface, and a user-friendly experience.",
+				details: "Le premier objectif était de créer un prototype web qui m'aide à tenir des conversations en direct avec des locuteurs français, en mettant l'accent sur le français canadien, une interface claire et une expérience conviviale.",
 			},
 			{
 				id: 2,
-				details: "The second goal was to create a chat assistant that can speak and learn canadian-french to the user, using the chatgpt API, by a chat split in two parts: the french side and english side, the two chat are the same, just traduced in the two langages.",
+				details: "Le deuxième objectif était de créer un assistant de chat capable de parler et d'apprendre le français canadien à l'utilisateur, en utilisant l'API chatgpt, par un chat divisé en deux parties : le côté français et le côté anglais, les deux chats sont les mêmes, juste traduits dans les deux langues.",
 			}
 		],
 	},
 	RelatedProject: {
-		title: 'Related Projects',
+		title: 'Projets liés',
 		Projects: [0, 1, 2],
 	},
 };

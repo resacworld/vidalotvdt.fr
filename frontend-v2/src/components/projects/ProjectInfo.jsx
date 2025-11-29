@@ -108,7 +108,7 @@ const ProjectInfo = () => {
 				<div>
 					<p className="font-general-regular text-2xl font-semibold text-ternary-dark dark:text-ternary-light mb-2">
 						{/* {singleProjectData.ProjectInfo.SocialSharingHeading} */}
-						Share this
+						Partager le projet
 					</p>
 					<div className="flex items-center gap-3 mt-5">
 						{SocialSharing.map(

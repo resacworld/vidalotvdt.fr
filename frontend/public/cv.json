@@ -15,40 +15,32 @@
             "title": "Coding",
             "images": [
                 "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg",
-                "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
-                "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
-                "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg",
-                "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
-                "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg",
-                "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg",
-                "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flutter/flutter-original.svg",
+                "https://www.kuka.com/-/media/kuka-corporate/images/careers/kukagroupjobs/logo/kuka.png?rev=cac1672a35ca45c8ac92a5029bfe1d67&w=1400&hash=ACFAD1E7BCEC7C43E3F225916CE6D734",
+                "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg",
+                "https://images.seeklogo.com/logo-png/44/1/ros-logo-png_seeklogo-441814.png",
+                "https://shop.wiredworkers.io/web/image/product.template/184/image_512/RoboDK%20Licentie?unique=35c6f6e",
                 "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg",
-                "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg",
-                "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original-wordmark.svg"
+                "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg",
+                "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg"
             ]
         }
     ],
     [
         {
-            "title": "Formations",
+            "title": "Expériences Professionnelles",
             "datas": [
                 {
-                    "year": "2025-2026",
-                    "title": "Alternance NOVALYNX / Cnam occitanie LICENCE informatique générale",
+                    "year": "2023-2026",
+                    "title": "Alternance chez NovaLynx / Cnam occitanie LICENCE informatique spécialité robotique de prototypage",
                     "list": [
-                        "Developpement robots industriels (Fanuc, Kuka, Doosan)",
-                        "Developpement logiciels industriels (en C#)",
-                        "Gestion de la relation client"
-                    ]
-                },
-                {
-                    "year": "2023-2025",
-                    "title": "Alternance NOVALYNX / Imerir, CNAM DEUST IOSI",
-                    "list": [
-                        "Developpement robots industriels (Fanuc, Kuka, Doosan)",
-                        "Developpement logiciels industriels (en C#)",
-                        "Câblage élétrique",
-                        "Montage mécanique"
+                        "Conception de cellules robotisées (Fanuc, Kuka, Doosan, Yaskawa)",
+                        "Developpement d'une interface en C# pour le pilotage",
+                        "Optimisation des trajectoires robots",
+                        "Vision industrielle (Visionerf, Keyence, etc...)",
+                        "Cablâge d'armoire éléctrique industrielle",
+                        "Programmation d'automates industriels (Siemens, Beckhoff, RS, Sick...)",
+                        "Montage mécanique, conception 3D CAO (Solidworks)",
+                        "Gestion (Fiches CIR, reception matériel, reception fournisseur...)"
                     ]
                 }
             ]
@@ -58,9 +50,8 @@
             "datas": [
                 {
                    "list": [
-                       "Modélisation 3D",
-                       "Developpement systèmes embarqués",
                        "Impression 3D",
+                       "Developpement systèmes embarqués (Arduino, Raspberry Pi...)",
                        "Réseaux informatiques"
                    ]
                }
@@ -72,8 +63,9 @@
                 {
                    "list": [
                        "Creation de mon site Web : vidalotvdt.fr",
-                       "Réalisation du réseau éléctrique d'un fourgon aménagé",
-                       "Milieu aquatique et marin"
+                       "Réalisation du réseau éléctrique d'un fourgon aménagé (Fusibles, panneau solaire, batterie auxiliaire...)",
+                       "Milieu aquatique (plongée, voile...)",
+                       "Analyse des marchés financiers"
                    ]
                }
             ]            
@@ -84,10 +76,11 @@
                 {
                    "list": [
                        "Plongée (niveau 1)",
+                       "Permis côtier",
                        "Guitare",
-                       "Bricolage",
                        "Voile",
-                       "Running"
+                       "Running",
+                       "Musculation"
                    ]
                }
             ]            
@@ -95,6 +88,6 @@
     ],
     [
         "Plaquette de présentation",
-        "Victor Vidalot, 20ans, actuellement en alternance chez NOVALYNX, un intégrateur d'innovations en robotique, dans le cadre de ma licence en informatique générale au CNAM perpignan (créee cette année) je parle et j'écris l'anglais."
+        "Je m'appelle Victor VIDALOT, actuellement alternant Roboticien chez NovaLynx, j'allie une solide expérience de terrain (programmation KUKA/Fanuc, développement C#, vision industrielle) à une formation technique rigoureuse. Passionné par l'intégration de systèmes complexes, je souhaite intégrer le cycle ingénieur de l'INSA Toulouse en spécialité Automatique et Électronique. Mon objectif est de continuer à mettre ma polyvalence technique et ma capacité d'innovation au service de NovaLynx sur un projet de trois ans."
     ]
 ]

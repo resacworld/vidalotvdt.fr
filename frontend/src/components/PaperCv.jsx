@@ -19,7 +19,7 @@ export default ({}) => {
             console.log(page, index)
             if(index == 0){
                 return <div className="header bg-blue-50 w-72">
-                    <h1 className="font-bold m-2 text-center">VIDALOT victor</h1>
+                    <h1 className="font-bold m-2 text-center">Apprenti Roboticien – Candidat pour le cycle Ingénieur AE</h1>
                     <img src="./images/screenshot.jpg" className=" w-3/4 m-auto"/>
 
                     {
@@ -63,10 +63,10 @@ export default ({}) => {
                                             <div className="w-28">{key2["year"]?key2["year"]:""}</div>
                                             <div className="w-full">
                                                 {key2["title"]? <h1 className="font-semibold">{key2["title"]}</h1>: null}
-                                                <ul>
+                                                <ul style={{listStyleType: 'circle'}}>
                                                     {
                                                         key2["list"].map(subtitle => {
-                                                            return <li>- {subtitle}</li>
+                                                            return <li> {subtitle}</li>
                                                         })
                                                     }
                                                 </ul>

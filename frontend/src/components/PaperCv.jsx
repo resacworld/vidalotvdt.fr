@@ -20,7 +20,6 @@ export default ({}) => {
             if(index == 0){
                 return <div className="header bg-blue-50 w-72">
                     <h1 className="font-bold text-center">VIDALOT Victor</h1>
-                    <h3 className="text-center m-2">Recherche une alternance de 2 ans en mécatronique – 2 jrs école / 3 jrs entreprise</h3>
                     <img src="./images/screenshot.jpg" className=" w-3/4 m-auto"/>
 
                     {

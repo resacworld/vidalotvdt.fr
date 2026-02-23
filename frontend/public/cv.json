@@ -2,7 +2,7 @@
     [
         {
             "title": "Informations perso",
-            "Adresse": "Bordeaux et ses environs",
+            "Adresse": "12 rue du haut roussillon, 66680 Canohès",
             "Telephone": "07 44 71 08 60",
             "Email": "vidalotvictor@gmail.com"
         },
@@ -30,8 +30,8 @@
             "title": "Expériences Professionnelles",
             "datas": [
                 {
-                    "year": "2026–2028",
-                    "title": "Master « Expert en Mécatronique » – Ynov Campus Bordeaux",
+                    "year": "2026 - 2028",
+                    "title": "Master en alternance chez vous",
                     "list": []
                 },
                 {
@@ -82,7 +82,8 @@
                 {
                    "list": [
                        ["@LinkedIn", "https://www.linkedin.com/in/victor-vidalot-823377264"],
-                       ["@Github", "https://github.com/resacworld"]
+                       ["@Github", "https://github.com/resacworld"],
+                       ["@Portfolio", "https://vidalotvdt.fr/"]
                    ]
                }
             ]            

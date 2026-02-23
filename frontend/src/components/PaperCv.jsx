@@ -19,7 +19,8 @@ export default ({}) => {
             console.log(page, index)
             if(index == 0){
                 return <div className="header bg-blue-50 w-72">
-                    <h1 className="font-bold m-2 text-center">Apprenti Roboticien – Candidat pour le cycle Ingénieur AE</h1>
+                    <h1 className="font-bold text-center">VIDALOT Victor</h1>
+                    <h3 className="text-center m-2">Recherche une alternance de 2 ans en mécatronique – 2 jrs école / 3 jrs entreprise</h3>
                     <img src="./images/screenshot.jpg" className=" w-3/4 m-auto"/>
 
                     {
@@ -50,13 +51,16 @@ export default ({}) => {
                     {
                         page.map(section => {
                             var lst = []
+
                             for (const key in section){
-                                console.log(key)
                                 if(key === "title") lst.push(
                                         <div className="flex items-center my-4 before:flex-1 before:border-t before:border-gray-300 before:mt-0.5 after:flex-1 after:border-t after:border-gray-300 after:mt-0.5">
                                             <p className="text-center font-bold text-xl mx-4 mb-0">{section["title"]}</p>
                                         </div>
                                     )
+
+                                else if(key == "link") continue;
+
                                 else {
                                     section["datas"].map(key2 => {
                                         lst.push(<div className="flex mt-4">
@@ -66,7 +70,12 @@ export default ({}) => {
                                                 <ul style={{listStyleType: 'circle'}}>
                                                     {
                                                         key2["list"].map(subtitle => {
-                                                            return <li> {subtitle}</li>
+                                                            if (section["link"] === true) {
+                                                                return <li style={{color: "blue"}}>{<a href={subtitle[1]}>{subtitle[0]}</a>}</li>
+                                                            }
+                                                            else {
+                                                                return <li>{subtitle}</li>
+                                                            }
                                                         })
                                                     }
                                                 </ul>

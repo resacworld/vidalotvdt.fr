@@ -2,14 +2,14 @@
     [
         {
             "title": "Informations perso",
-            "Adresse": "12 rue du haut roussillon, Canohès, 66680",
+            "Adresse": "Bordeaux et ses environs",
             "Telephone": "07 44 71 08 60",
             "Email": "vidalotvictor@gmail.com"
         },
         {
             "title": "Langues étrangères",
-            "Anglais : B2": null,
-            "Espagnol : A2": null
+            "Anglais : intermédiaire ": null,
+            "Espagnol : débutant ": null
         },
         {
             "title": "Coding",
@@ -31,7 +31,7 @@
             "datas": [
                 {
                     "year": "2023-2026",
-                    "title": "Alternance chez NovaLynx / Cnam occitanie LICENCE informatique spécialité robotique de prototypage",
+                    "title": "Alternance chez NovaLynx / Cnam occitanie D.E.U.S.T IOSI et LICENCE informatique spécialité robotique de prototypage",
                     "list": [
                         "Conception de cellules robotisées (Fanuc, Kuka, Doosan, Yaskawa)",
                         "Developpement d'une interface en C# pour le pilotage",
@@ -42,33 +42,24 @@
                         "Montage mécanique, conception 3D CAO (Solidworks)",
                         "Gestion (Fiches CIR, reception matériel, reception fournisseur...)"
                     ]
+                },
+                {
+                    "year": "2026–2028",
+                    "title": "Master « Expert en Mécatronique » – Ynov Campus Bordeaux",
+                    "list": []
                 }
             ]
         },
         {
-            "title": "Autres Compétences",
+            "title": "Compétences",
             "datas": [
                 {
                    "list": [
-                       "Impression 3D",
-                       "Developpement systèmes embarqués (Arduino, Raspberry Pi...)",
-                       "Réseaux informatiques"
+                        "S.Skills : autonomie, créativité, esprit d'équipe, rigueur, capacité d'analyse).",
+                        "H.Skills : KRL, RobotDK, C#, Workvisual, Beckhoff, ROS, Solidworks, Vision industrielle"
                    ]
                }
             ]
-        },
-        {
-            "title": "Centres d'intêrets",
-            "datas": [
-                {
-                   "list": [
-                       "Creation de mon site Web : vidalotvdt.fr",
-                       "Réalisation du réseau éléctrique d'un fourgon aménagé (Fusibles, panneau solaire, batterie auxiliaire...)",
-                       "Milieu aquatique (plongée, voile...)",
-                       "Analyse des marchés financiers"
-                   ]
-               }
-            ]            
         },
         {
             "title": "Loisirs",
@@ -77,17 +68,28 @@
                    "list": [
                        "Plongée (niveau 1)",
                        "Permis côtier",
+                       "Permis.B / Véhiculé",
                        "Guitare",
-                       "Voile",
-                       "Running",
-                       "Musculation"
+                       "Running"
+                   ]
+               }
+            ]            
+        },
+        {
+            "title": "Mes Comptes",
+            "link": true,
+            "datas": [
+                {
+                   "list": [
+                       ["@LinkedIn", "https://www.linkedin.com/in/victor-vidalot-823377264"],
+                       ["@Github", "https://github.com/resacworld"]
                    ]
                }
             ]            
         }
     ],
     [
-        "Plaquette de présentation",
-        "Je m'appelle Victor VIDALOT, actuellement alternant Roboticien chez NovaLynx, j'allie une solide expérience de terrain (programmation KUKA/Fanuc, développement C#, vision industrielle) à une formation technique rigoureuse. Passionné par l'intégration de systèmes complexes, je souhaite intégrer le cycle ingénieur de l'INSA Toulouse en spécialité Automatique et Électronique. Mon objectif est de continuer à mettre ma polyvalence technique et ma capacité d'innovation au service de NovaLynx sur un projet de trois ans."
+        "A propos de moi",
+        "Spécialisé en mécatronique, je conçois et intègre des systèmes automatisés combinant mécanique, électronique et informatique industrielle (programmation KUKA/Fanuc, développement C#, vision industrielle). Dans le cadre d'un Master en mécatronique, je souhaite approfondir mes compétences en commande avancée des systèmes dynamiques, électronique embarquée, robotique intelligente, traitement du signal, modélisation et simulation multiphysique, ainsi qu'en optimisation et fiabilité des systèmes industriels"
     ]
 ]

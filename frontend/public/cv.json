@@ -30,6 +30,11 @@
             "title": "Expériences Professionnelles",
             "datas": [
                 {
+                    "year": "2026–2028",
+                    "title": "Master « Expert en Mécatronique » – Ynov Campus Bordeaux",
+                    "list": []
+                },
+                {
                     "year": "2023-2026",
                     "title": "Alternance chez NovaLynx / Cnam occitanie D.E.U.S.T IOSI et LICENCE informatique spécialité robotique de prototypage",
                     "list": [
@@ -42,11 +47,6 @@
                         "Montage mécanique, conception 3D CAO (Solidworks)",
                         "Gestion (Fiches CIR, reception matériel, reception fournisseur...)"
                     ]
-                },
-                {
-                    "year": "2026–2028",
-                    "title": "Master « Expert en Mécatronique » – Ynov Campus Bordeaux",
-                    "list": []
                 }
             ]
         },

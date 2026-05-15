@@ -6,7 +6,8 @@ COPY package.json package-lock.json* ./
 RUN npm install
 
 COPY . .
-RUN npm run build
+ENV NODE_OPTIONS=--openssl-legacy-provider
+RUN npx react-scripts build
 
 FROM nginx:alpine
 

@@ -2,8 +2,8 @@ FROM node:18-alpine AS builder
 
 WORKDIR /app
 
-COPY package.json yarn.lock* package-lock.json* ./
-RUN npm install --legacy-peer-deps
+COPY package.json package-lock.json* ./
+RUN npm install
 
 COPY . .
 RUN NODE_OPTIONS=--openssl-legacy-provider npm run build

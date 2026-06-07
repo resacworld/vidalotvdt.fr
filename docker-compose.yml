@@ -1,8 +1,29 @@
 services:
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    env_file: ./backend/.env
+    volumes:
+      - uploads:/app/uploads
+    networks:
+      - app
+
   frontend:
     build:
-      context: ./frontend
+      context: ./frontend-new
       dockerfile: Dockerfile
-    ports:
-      - "${PORT:-4000}:4000"
     restart: unless-stopped
+    ports:
+      - "${PORT:-80}:80"
+    depends_on:
+      - backend
+    networks:
+      - app
+
+volumes:
+  uploads:
+
+networks:
+  app:

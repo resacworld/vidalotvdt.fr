@@ -9,6 +9,8 @@ services:
       - "${PORT:-3001}:3001"
     volumes:
       - uploads:/app/uploads
+    extra_hosts:
+      - "host.docker.internal:host-gateway"  # Linux : rend l'hôte joignable
 
 volumes:
   uploads:

@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+/* Background colors */
+
+.bg-extralight {
+    background-color: #F5F3FF;
+}
+
+.bg-light {
+    background-color: #DDD6FE;
+}
+
+.bg-regular {
+    background-color: #8B5CF6;
+}
+
+.bg-bold {
+    background-color: #5B21B6;
+}
+
+.bg-extrabold {
+    background-color: #1E1B4B;
+}

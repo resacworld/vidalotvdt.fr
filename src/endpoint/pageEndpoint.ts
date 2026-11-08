@@ -5,8 +5,8 @@ import { todoService } from '../services/todoService.ts'
 // HTML pages. SSR = data fetched + rendered on the server. SPA = empty shell, the browser does everything.
 export const pageEndpoint = Router()
 
-pageEndpoint.get('/', (_req, res) => {
-  res.type('html').send('<a href="/ssr">SSR</a> | <a href="/spa">SPA</a>')
+pageEndpoint.get('/', async (req, res, next) => {
+  await renderPage(req, res, next)
 })
 
 pageEndpoint.get('/ssr', async (req, res, next) => {

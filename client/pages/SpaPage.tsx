@@ -2,6 +2,8 @@ import { useEffect, useState } from 'react'
 import { api } from '../api.ts'
 import type { Todo } from '../../src/types/todo.ts'
 import { TodoList } from './TodoList.tsx'
+import Navbar from '../components/NavBar.tsx'
+import "../style.css"
 
 // Empty HTML from the server; data fetched by the browser after load.
 export function SpaPage() {
@@ -13,6 +15,8 @@ export function SpaPage() {
 
   return (
     <>
+      <Navbar />
+
       <h1>Todos (SPA)</h1>
       {todos ? <TodoList todos={todos} setTodos={(fn) => setTodos((prev) => fn(prev ?? []))} /> : <p>Chargement…</p>}
     </>

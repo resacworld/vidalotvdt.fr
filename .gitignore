@@ -1,29 +1,5 @@
-# Dependencies
-node_modules/
-
-# Environment variables
+dev.db*
+src/generated/
 .env
-.env.local
-.env.*.local
-
-# Build outputs
+node_modules/
 dist/
-build/
-
-# Uploads (médias uploadés via l'admin — persistés dans un volume Docker)
-backend/uploads/
-
-# Logs
-*.log
-npm-debug.log*
-
-# OS
-.DS_Store
-Thumbs.db
-
-# IDE
-.vscode/
-.idea/
-
-# Docker
-.dockerignore

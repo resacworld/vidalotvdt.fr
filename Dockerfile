@@ -1,30 +1,32 @@
-# ── Stage 1 : Build du frontend ──────────────────────────────────────────────
-FROM node:lts-alpine AS frontend-build
-WORKDIR /frontend
-COPY frontend-new/package*.json ./
-RUN npm ci
-COPY frontend-new/ .
-RUN npm run build
-
-# ── Stage 2 : Dépendances de production du backend ───────────────────────────
-FROM node:lts-alpine AS backend-deps
+# --- build: full deps, Prisma client + Vite bundles
+FROM node:24-slim AS build
 WORKDIR /app
-COPY backend/package*.json ./
-RUN npm ci --omit=dev
+COPY package*.json ./
+RUN npm ci --ignore-scripts
+COPY . .
+# generate never connects, but prisma.config.ts requires the var to be set.
+RUN DATABASE_URL=file:/tmp/build.db npx prisma generate && npm run build
 
-# ── Stage 3 : Image finale ────────────────────────────────────────────────────
-FROM node:lts-alpine
+# --- runtime: prod deps only
+FROM node:24-slim
 WORKDIR /app
+ENV NODE_ENV=production PORT=3000 DATABASE_URL=file:/data/app.db
+# Prisma's migration engine needs openssl, missing from slim images.
+RUN apt-get update && apt-get install -y --no-install-recommends openssl && rm -rf /var/lib/apt/lists/*
+COPY package*.json ./
+RUN npm ci --omit=dev --ignore-scripts && npm cache clean --force
+COPY --from=build /app/dist ./dist
+COPY --from=build /app/src ./src
+COPY server.ts prisma.config.ts ./
+COPY prisma ./prisma
+# Fetch the migration engine now (as root): `migrate deploy` would try to download it at boot otherwise.
+RUN npx prisma migrate diff --from-empty --to-schema prisma/schema.prisma --script > /dev/null
 
-COPY --from=backend-deps /app/node_modules ./node_modules
-COPY backend/ .
+# SQLite file lives in a volume so it survives redeploys.
+RUN mkdir /data && chown node:node /data
+VOLUME /data
+USER node
+EXPOSE 3000
 
-# Intégration du frontend buildé — Express le servira comme fichiers statiques
-COPY --from=frontend-build /frontend/dist ./frontend-dist
-
-RUN mkdir -p uploads/projects uploads/cv
-
-EXPOSE 3001
-ENV NODE_ENV=production
-
-CMD ["node", "src/index.js"]
+# Apply pending migrations, then start. `exec`: node replaces sh, so it receives SIGTERM on redeploy.
+CMD ["sh", "-c", "npx prisma migrate deploy && exec node server.ts"]

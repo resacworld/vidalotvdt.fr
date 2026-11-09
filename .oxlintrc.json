@@ -8,6 +8,7 @@
     "react/react-in-jsx-scope": "off",
     "react/no-array-index-key": "warn",
     "no-underscore-dangle": "off",
+    "import/no-unassigned-import": "off",
 
     "eqeqeq": "error",
     "prefer-const": "error",

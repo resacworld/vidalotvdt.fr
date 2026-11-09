@@ -29,7 +29,7 @@ export function Page({ state }: { state: AppState }) {
 function SsrPageSelect({ state }: { state: AppState }) {
   switch (state.page) {
     case 'ssr':
-      return <SsrPage todos={state.todos} />
+      return <SsrPage />
     case '404':
       return <Ssr404Page />
   }

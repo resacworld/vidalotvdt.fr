@@ -1,6 +1,3 @@
-import { useState } from 'react'
-import type { Todo } from '../../src/types/todo.ts'
-import { TodoList } from '../components/TodoList.tsx'
 import Navbar from '../components/NavBar.tsx'
 import ProjectCard from '../components/ProjectCard.tsx'
 import SkillCard from '../components/SkillCard.tsx'
@@ -8,8 +5,7 @@ import TimeLine from '../components/TimeLine.tsx'
 import Title from '../components/Title.tsx'
 
 // Data comes from the server (already in the HTML), no fetch on load.
-export function SsrPage({ todos: initialTodos }: { todos: Todo[] }) {
-  const [todos, setTodos] = useState(initialTodos)
+export function SsrPage() {
   return (
     <>
       <Navbar />

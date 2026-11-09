@@ -6,7 +6,7 @@ import { todoService } from '../services/todoService.ts'
 export const pageEndpoint = Router()
 
 pageEndpoint.get('/', async (req, res, next) => {
-  await renderPage(req, res, next)
+  await renderPage(req, res, next, { page: 'ssr' })
 })
 
 pageEndpoint.get('/ssr', async (req, res, next) => {

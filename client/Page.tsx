@@ -8,7 +8,7 @@ const Ssr404Page = lazy(() => import('./pages/Ssr404Page.tsx').then((m) => ({ de
 /*
  Data rendered by the server and handed to the client for hydration. Add a page = add a variant.
  */
-export type AppState = { page: 'ssr' | '404'; todos: Todo[] }
+export type AppState = { page: 'ssr' | '404'; todos?: Todo[] }
 
 /**
  * Function to select the active page to be rendered with ssr (lazy load the selected page)

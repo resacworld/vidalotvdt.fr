@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { api } from '../api.ts'
 import type { Todo } from '../../src/types/todo.ts'
-import { TodoList } from './TodoList.tsx'
+import { TodoList } from '../components/TodoList.tsx'
 import Navbar from '../components/NavBar.tsx'
 import "../style.css"
 

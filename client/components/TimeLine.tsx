@@ -11,7 +11,7 @@ export type Step = {
 // One row per step: date | dot on vertical line | Formation | Entreprise.
 export default function TimeLine({ steps }: { steps: Step[] }) {
   return (
-    <div className="m-4 overflow-x-auto">
+    <div className="mx-4 overflow-x-auto">
       <div className="grid min-w-2xl grid-cols-[8rem_1.5rem_1fr_1fr] gap-x-6 text-sm">
         <div />
         <div />

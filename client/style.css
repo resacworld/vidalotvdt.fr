@@ -1,23 +1,17 @@
 @import "tailwindcss";
+@import "@fontsource-variable/space-grotesk";
 
-/* Background colors */
-
-.bg-extralight {
-    background-color: #F5F3FF;
+html {
+    scroll-behavior: smooth;
 }
 
-.bg-light {
-    background-color: #DDD6FE;
-}
+/* Each --color-X gives bg-X, text-X, border-X... */
+@theme {
+    --font-grotesk: "Space Grotesk Variable", sans-serif;
 
-.bg-regular {
-    background-color: #8B5CF6;
-}
-
-.bg-bold {
-    background-color: #5B21B6;
-}
-
-.bg-extrabold {
-    background-color: #1E1B4B;
+    --color-extralight: #F5F3FF;
+    --color-light: #DDD6FE;
+    --color-regular: #8B5CF6;
+    --color-bold: #5B21B6;
+    --color-extrabold: #1E1B4B;
 }

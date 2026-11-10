@@ -6,9 +6,9 @@ const defaultLinks: Link[] = [
   { label: 'Compétences', href: '#competences' },
 ]
 
-export default function Navbar({ name = 'Victor Vidalot', links = defaultLinks }: { name?: string; links?: Link[] }) {
+export default function NavBar({ name = 'Victor Vidalot', links = defaultLinks }: { name?: string; links?: Link[], side?: boolean }) {
   return (
-    <nav className="fixed top-0 left-0 right-0 bg-bold text-white z-20">
+    <nav className="sticky top-0 right-0 left-0 bg-bold text-white z-20">
       <div className="mx-auto flex max-w-5xl items-center justify-between px-6 py-4 text-sm">
         <a href="/" className="font-semibold">{name}</a>
         <ul className="flex gap-5">

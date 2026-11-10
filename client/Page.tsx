@@ -2,7 +2,7 @@ import { lazy, Suspense } from 'react'
 import type { Todo } from '../src/types/todo.ts'
 
 // Lazy: each page is its own chunk, the browser only downloads the one it renders.
-const SsrPage = lazy(() => import('./pages/SsrPage.tsx').then((m) => ({ default: m.SsrPage })))
+const SsrHomePage = lazy(() => import('./pages/SsrHomePage.tsx').then((m) => ({ default: m.SsrHomePage })))
 const Ssr404Page = lazy(() => import('./pages/Ssr404Page.tsx').then((m) => ({ default: m.Ssr404Page })))
 
 /*
@@ -29,7 +29,7 @@ export function Page({ state }: { state: AppState }) {
 function SsrPageSelect({ state }: { state: AppState }) {
   switch (state.page) {
     case 'ssr':
-      return <SsrPage />
+      return <SsrHomePage />
     case '404':
       return <Ssr404Page />
   }

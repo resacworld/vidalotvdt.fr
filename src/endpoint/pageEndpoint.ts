@@ -15,6 +15,6 @@ pageEndpoint.get('/ssr', async (req, res, next) => {
 })
 
 // Catch-all so client-side sub-routes (/spa/whatever) survive a refresh.
-pageEndpoint.get('/spa{/*splat}', async (req, res, next) => {
+pageEndpoint.get('/admin{/*splat}', async (req, res, next) => {
   await renderPage(req, res, next)
 })

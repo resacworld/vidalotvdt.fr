@@ -1,16 +1,16 @@
-import Navbar from '../components/NavBar.tsx'
+import NavBar from '../components/NavBar.tsx'
 import ProjectCard from '../components/ProjectCard.tsx'
 import SkillCard from '../components/SkillCard.tsx'
 import TimeLine from '../components/TimeLine.tsx'
 import Title from '../components/Title.tsx'
 
 // Data comes from the server (already in the HTML), no fetch on load.
-export function SsrPage() {
+export function SsrHomePage() {
   return (
     <>
-      <Navbar />
+      <NavBar />
 
-      <header className='bg-bold font-grotesk text-white pt-10'>
+      <header className='bg-bold font-grotesk text-white'>
         <div className='mx-auto max-w-5xl px-6 py-12'>
           <p className='text-sm text-violet-200'>Élève ingénieur en alternance, CESI Toulouse</p>
           <h1 className='mt-4 max-w-2xl text-4xl font-semibold leading-tight'>

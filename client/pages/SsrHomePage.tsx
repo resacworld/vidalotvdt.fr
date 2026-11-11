@@ -29,84 +29,85 @@ export function SsrHomePage() {
           </div>
         </div>
       </header>
+      <div className='mx-auto max-w-7xl'>
+        <div className='mx-4'>
+          <Title id="parcours" title="Parcours"/>
 
-      <div className='mx-20'>
-        <Title id="parcours" title="Parcours"/>
+          <TimeLine 
+          steps={[
+            {
+              date: "2023-2025",
+              school: "IMERIR",
+              schoolDetail: "Ocitanie",
+              role: "Alternant informaticien",
+              company: "NovaLynx",
+              companyDetail: "Integrateur d'innovations",
+              current: true
+            },
+            {
+              date: "2025-2026",
+              school: "CNAM",
+              schoolDetail: "Ocitanie",
+              role: "Alternant informaticien / roboticien",
+              company: "NovaLynx",
+              companyDetail: "Integrateur d'innovations",
+              current: true
+            },
+            {
+              date: "2026-2029",
+              school: "CESI",
+              schoolDetail: "Ocitanie",
+              role: "Alternant gestion de projet",
+              company: "NovaLynx",
+              companyDetail: "Integrateur d'innovations",
+              current: true
+            }
+          ]}
+          />
 
-        <TimeLine 
-        steps={[
-          {
-            date: "2023-2025",
-            school: "IMERIR",
-            schoolDetail: "Ocitanie",
-            role: "Alternant informaticien",
-            company: "NovaLynx",
-            companyDetail: "Integrateur d'innovations",
-            current: true
-          },
-          {
-            date: "2025-2026",
-            school: "CNAM",
-            schoolDetail: "Ocitanie",
-            role: "Alternant informaticien / roboticien",
-            company: "NovaLynx",
-            companyDetail: "Integrateur d'innovations",
-            current: true
-          },
-          {
-            date: "2026-2029",
-            school: "CESI",
-            schoolDetail: "Ocitanie",
-            role: "Alternant gestion de projet",
-            company: "NovaLynx",
-            companyDetail: "Integrateur d'innovations",
-            current: true
-          }
-        ]}
-        />
+          <Title id="projets" title="Projets"/>
 
-        <Title id="projets" title="Projets"/>
+          <div className='flex justify-between flex-col md:flex-row'>
+            <ProjectCard
+            title='Hello'
+            description='Lorem ipsum dolor'
+            status='En cours'
+            tags={["C#", "KRL"]}
+            />
+            <ProjectCard
+            title='Hello'
+            description='Lorem ipsum dolor'
+            status='En cours'
+            tags={["C#", "KRL"]}
+            />
+            <ProjectCard
+            title='Hello'
+            description='Lorem ipsum dolor'
+            status='En cours'
+            tags={["C#", "KRL"]}
+            />
+          </div>
 
-        <div className='flex justify-between'>
-          <ProjectCard
-          title='Hello'
-          description='Lorem ipsum dolor'
-          status='En cours'
-          tags={["C#", "KRL"]}
-          />
-          <ProjectCard
-          title='Hello'
-          description='Lorem ipsum dolor'
-          status='En cours'
-          tags={["C#", "KRL"]}
-          />
-          <ProjectCard
-          title='Hello'
-          description='Lorem ipsum dolor'
-          status='En cours'
-          tags={["C#", "KRL"]}
-          />
-        </div>
+          <Title id="competences" title="Compétences"/>
 
-        <Title id="competences" title="Compétences"/>
-
-        <div className='flex justify-between'>
-          <SkillCard 
-          title='Robotique'
-          skills={["Programmation kuka (KRL)", "Simulation KUKA.Sim", "Roboguide", "ROS / ROS2"]}
-          />
-          <SkillCard 
-          title='Automatisme'
-          skills={["Automate Siemens", "Automate Beckhoff", "Electricité", "Electronique"]}
-          />
-          <SkillCard 
-          title='Developpement'
-          skills={["C#", "C++", "KRL", "Python", "SQL", "Node.js"]}
-          />
-          <SkillCard 
-          title='Infrastructure'
-          skills={["Linux", "Docker", "Coolify"]}
-          />
+          <div className='flex justify-between flex-col md:flex-row'>
+            <SkillCard 
+            title='Robotique'
+            skills={["Programmation kuka (KRL)", "Simulation KUKA.Sim", "Roboguide", "ROS / ROS2"]}
+            />
+            <SkillCard 
+            title='Automatisme'
+            skills={["Automate Siemens", "Automate Beckhoff", "Electricité", "Electronique"]}
+            />
+            <SkillCard 
+            title='Developpement'
+            skills={["C#", "C++", "KRL", "Python", "SQL", "Node.js"]}
+            />
+            <SkillCard 
+            title='Infrastructure'
+            skills={["Linux", "Docker", "Coolify"]}
+            />
+          </div>
         </div>
       </div>
     </>

@@ -8,7 +8,7 @@ export type Project = {
 
 export default function ProjectCard({ title, description, status, tags, image }: Project) {
   return (
-    <article className="overflow-hidden rounded-lg border border-violet-100 bg-white m-4 w-sm">
+    <article className="overflow-hidden rounded-lg border border-violet-100 bg-white m-4 md:w-sm">
       {image ? <img src={image} alt="" className="h-40 w-full object-cover" /> : <div className="h-40 bg-violet-200" />}
       <div className="space-y-3 p-4">
         <span className={`inline-block rounded px-2 py-0.5 text-xs ${status === 'Terminé' ? 'bg-violet-700 text-white' : 'bg-violet-100 text-violet-700'}`}>

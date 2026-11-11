@@ -1,5 +1,6 @@
 import { lazy, Suspense, useEffect, useState } from 'react'
 import '../style.css'
+import LoadingPage from './LoadingPage.tsx'
 
 // Dictionnary of Lazy-loaded pages
 const routes: Record<string, ReturnType<typeof lazy>> = {
@@ -24,5 +25,5 @@ export function SpaAdmin() {
   }, [])
 
   const Page = routes[path] ?? routes['/admin']
-  return <Suspense fallback={<p>Chargement…</p>}><Page /></Suspense>
+  return <Suspense fallback={<LoadingPage />}><Page /></Suspense>
 }

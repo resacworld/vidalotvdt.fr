@@ -14,7 +14,8 @@ src/                      ====> BACKEND
     trpc.ts               -> Init tRPC (router, publicProcedure)
     appRouter.ts          -> Router tRPC racine -> /trpc (type AppRouter)
     todoEndpoint.ts       -> Procédures todo.list / todo.add (validées par zod)
-    pageEndpoint.ts       -> Pages HTML -> /ssr, /spa/*
+    authEndpoint.ts       -> auth.login / auth.logout (cookie de session admin)
+    pageEndpoint.ts       -> Pages HTML -> /, /ssr, /admin/*
   middlewares/            ==> Définis/créer les middlewares backend
   render.ts               -> Vite (dev) / dist (prod) + rendu SSR streamé
 client/                   ====> FRONTEND
@@ -41,7 +42,8 @@ npm run db:deploy     # en prod : applique les migrations
 Passer à Postgres : `provider = "postgresql"` dans le schéma, `@prisma/adapter-pg` dans `src/repositories/db.ts`, et une `DATABASE_URL` postgres.
 
 - **SSR** (`/ssr`) : le serveur appelle le service, rend React, envoie le state ; le client hydrate.
-- **SPA** (`/spa/*`) : le serveur envoie le shell vide ; le client appelle `api.todo.list.query()` (tRPC).
+- **SPA admin** (`/admin/*`) : le serveur envoie le shell vide (ou redirige vers `/admin/login` sans session) ; `client/pages/SpaAdmin.tsx` route côté client via l'API Navigation, sans rechargement. Ajouter une page admin : une ligne dans `routes`.
+- **Auth** : un seul admin, mot de passe hashé dans `ADMIN_PASSWORD_HASH`, session = cookie httpOnly signé avec `SESSION_SECRET` (commandes de génération dans `.env.example`). Protéger une procédure : `adminProcedure` au lieu de `publicProcedure`.
 
 Ajouter une route API : une procédure dans un router de `src/endpoint/`, branché dans `appRouter.ts`. Le front voit le nouveau type immédiatement, une erreur de signature casse le typecheck.
 

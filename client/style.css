@@ -15,3 +15,9 @@ html {
     --color-bold: #5B21B6;
     --color-extrabold: #1E1B4B;
 }
+
+/* Modify the default pos where local link shows the title */
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 8rem; /* hauteur de la navbar */
+}

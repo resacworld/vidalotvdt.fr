@@ -2,9 +2,10 @@ import express from 'express'
 import { env, isProd } from './src/env.ts'
 import { errorHandler } from './src/middlewares/errorHandler.ts'
 import { Page404Handler } from './src/middlewares/page404Handler.ts'
-import { apiRateLimit, nonce, securityHeaders } from './src/middlewares/security.ts'
+import { apiRateLimit, loginRateLimit, nonce, securityHeaders } from './src/middlewares/security.ts'
 import { createExpressMiddleware } from '@trpc/server/adapters/express'
 import { appRouter } from './src/endpoint/appRouter.ts'
+import { createContext } from './src/endpoint/trpc.ts'
 import { pageEndpoint } from './src/endpoint/pageEndpoint.ts'
 import { setupFrontend } from './src/render.ts'
 
@@ -17,8 +18,13 @@ app.set('trust proxy', 1)
 app.use(nonce, securityHeaders)
 app.use(express.json({ limit: '100kb' }))
 
-// Initialize Trpc
-app.use('/trpc', apiRateLimit, createExpressMiddleware({ router: appRouter }))
+/**
+ * Initialize Trpc.
+ * - Public rate limit
+ * - Login only rate limit (nb of attempts) 
+ * - TRPC batching disabled: avoid brute force attempts
+*/
+app.use('/trpc', apiRateLimit, loginRateLimit, createExpressMiddleware({ router: appRouter, createContext, allowBatching: false }))
 await setupFrontend(app) // before pages: serves /client/*, /@vite/* in dev and assets in prod
 
 // Initialize routes

@@ -1,12 +1,10 @@
 import { useEffect, useState } from 'react'
-import { api } from '../api.ts'
-import type { Todo } from '../../src/types/todo.ts'
-import "../style.css"
-import Table from '../components/Table.tsx'
-import SideBar from '../components/SideBar.tsx'
+import { api } from '../../api.ts'
+import type { Todo } from '../../../src/types/todo.ts'
+import Table from '../../components/Table.tsx'
+import SideBar from '../../components/SideBar.tsx'
 
-// Empty HTML from the server; data fetched by the browser after load.
-export function SpaAdminPage() {
+export function DashboardPage() {
   const [todos, setTodos] = useState<Todo[] | null>(null)
 
   useEffect(() => {

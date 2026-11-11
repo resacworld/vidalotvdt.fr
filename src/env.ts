@@ -5,6 +5,8 @@ const schema = z.object({
   NODE_ENV: z.enum(['development', 'production', 'test']),
   PORT: z.coerce.number().int().min(1).max(65535),
   DATABASE_URL: z.string().min(1),
+  ADMIN_PASSWORD_HASH: z.string().regex(/^[0-9a-f]{32}:[0-9a-f]{128}$/, 'salt:hash, see .env.example'),
+  SESSION_SECRET: z.string().min(32),
 })
 
 const parsed = schema.safeParse(process.env)

@@ -23,7 +23,33 @@ export const securityHeaders = helmet({
   strictTransportSecurity: isProd,
 })
 
-// Express rate limit 
+/**
+ * Check if the request is a login attempt
+ * 
+ * Decode before checking "auth.login" in path for sercurity purpose, ex: 
+ * - POST /trpc/auth.login
+ * - POST /trpc/auth%2Elogin
+ * => "decodeURIComponent" convert escaped characters "auth%Elogin" become "auth.login" (%E is the code of .)
+ *  
+ *  
+ * @param path Path
+ * @returns True if the request is a login attempt, otherwise false
+ */
+const isLogin = (path: string) => {
+  try { return decodeURIComponent(path).includes('auth.login') } catch { return true }
+}
+
+// Login rate limit (disabled for non-login requests)
+export const loginRateLimit = rateLimit({
+  windowMs: 15 * 60_000,
+  limit: 10,
+  skip: (req) => !isLogin(req.path),
+  skipSuccessfulRequests: true,
+  standardHeaders: 'draft-8',
+  legacyHeaders: false,
+})
+
+// Ultimate express rate limit (applied on all deployed routes) 
 export const apiRateLimit = rateLimit({
   windowMs: 60_000,
   limit: isProd ? 100 : 99999,

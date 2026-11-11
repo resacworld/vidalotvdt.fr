@@ -1,6 +1,7 @@
 import { Router } from 'express'
 import { renderPage } from '../render.ts'
 import { todoService } from '../services/todoService.ts'
+import { authService } from '../services/authService.ts'
 
 // HTML pages. SSR = data fetched + rendered on the server. SPA = empty shell, the browser does everything.
 export const pageEndpoint = Router()
@@ -14,7 +15,12 @@ pageEndpoint.get('/ssr', async (req, res, next) => {
   await renderPage(req, res, next, { page: 'ssr', todos: await todoService.list() })
 })
 
-// Catch-all so client-side sub-routes (/spa/whatever) survive a refresh.
+// Catch-all so client-side sub-routes (/admin/whatever) survive a refresh.
+// Redirect before sending the shell: no flash of the wrong page. UX only, the API checks the session itself.
 pageEndpoint.get('/admin{/*splat}', async (req, res, next) => {
+  const onLogin = req.path === '/admin/login'
+  const isAdmin = authService.isAdmin(req)
+  if (!isAdmin && !onLogin) return res.redirect('/admin/login')
+  if (isAdmin && onLogin) return res.redirect('/admin')
   await renderPage(req, res, next)
 })

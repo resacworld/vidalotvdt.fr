@@ -1,16 +1,14 @@
 import { useEffect, useRef, useState, type KeyboardEvent } from 'react'
 
-export type ProjectForm = {
-  titleFr: string
-  titleEn: string
-  descriptionFr: string
-  descriptionEn: string
-  status: 'En cours' | 'Terminé'
-  tags: string[]
-  image?: string
-}
+import type { ProjectInput } from '../../src/types/project.ts'
+import { statusLabel } from './ProjectCard.tsx'
+
+// Same shape as the API input: what the modal returns can be sent as-is.
+export type ProjectForm = ProjectInput
 
 type Props = {
+  title: string
+  error?: string
   project: ProjectForm
   onClose: () => void
   // imageFile only when the image was replaced; the parent uploads it.
@@ -24,7 +22,7 @@ const label = 'text-sm font-semibold text-extrabold'
  * Project edit modal. Render it only while editing ({editing && <ProjectEditModal .../>}):
  * fresh state on every open, and native <dialog> gives Esc, backdrop and focus trap for free.
  */
-export default function ProjectEditModal({ project, onClose, onSave }: Props) {
+export default function ProjectEditModal({ title, error, project, onClose, onSave }: Props) {
   const dialog = useRef<HTMLDialogElement>(null)
   const [tags, setTags] = useState(project.tags)
   const [tagDraft, setTagDraft] = useState('')
@@ -63,7 +61,7 @@ export default function ProjectEditModal({ project, onClose, onSave }: Props) {
       descriptionEn: String(f.get('descriptionEn')),
       status: f.get('status') as ProjectForm['status'],
       tags,
-      image,
+      image: project.image, // `image` state may be a blob: preview; a new image travels as imageFile
     }, imageFile)
   }
 
@@ -72,7 +70,7 @@ export default function ProjectEditModal({ project, onClose, onSave }: Props) {
     <dialog ref={dialog} onClose={onClose} className="m-auto w-[calc(100%-2rem)] max-w-3xl rounded-xl bg-extralight p-6 font-grotesk backdrop:bg-extrabold/40">
       <form action={submit} className="space-y-6">
         <div className="flex items-center justify-between">
-          <h2 className="text-xl font-semibold text-extrabold">Modifier le projet</h2>
+          <h2 className="text-xl font-semibold text-extrabold">{title}</h2>
           <button type="button" onClick={onClose} aria-label="Fermer" className="rounded px-2 text-xl text-bold hover:bg-light">×</button>
         </div>
 
@@ -94,8 +92,7 @@ export default function ProjectEditModal({ project, onClose, onSave }: Props) {
           <label className="flex flex-col gap-2 sm:w-40">
             <span className={label}>Statut</span>
             <select name="status" defaultValue={project.status} className={input}>
-              <option>En cours</option>
-              <option>Terminé</option>
+              {Object.entries(statusLabel.fr).map(([value, text]) => <option key={value} value={value}>{text}</option>)}
             </select>
           </label>
         </div>
@@ -129,6 +126,8 @@ export default function ProjectEditModal({ project, onClose, onSave }: Props) {
               className="min-w-40 flex-1 text-sm text-extrabold placeholder:text-bold focus:outline-none" />
           </div>
         </div>
+
+        {error && <p role="alert" className="text-sm text-red-700">{error}</p>}
 
         <div className="flex justify-end gap-3">
           <button type="button" onClick={onClose} className="rounded-md border border-regular bg-white px-5 py-2 text-sm text-bold hover:bg-extralight">Annuler</button>

@@ -1,11 +1,12 @@
 import NavBar from '../components/NavBar.tsx'
-import ProjectCard from '../components/ProjectCard.tsx'
+import ProjectCard, { localize } from '../components/ProjectCard.tsx'
+import type { Project } from '../../src/types/project.ts'
 import SkillCard from '../components/SkillCard.tsx'
 import TimeLine from '../components/TimeLine.tsx'
 import Title from '../components/Title.tsx'
 
 // Data comes from the server (already in the HTML), no fetch on load.
-export function SsrHomePage() {
+export function SsrHomePage({ projects }: { projects: Project[] }) {
   return (
     <>
       <NavBar />
@@ -68,26 +69,8 @@ export function SsrHomePage() {
           <Title id="projets" title="Projets"/>
 
           <div className='flex justify-between flex-col md:flex-row'>
-            <ProjectCard
-            image='/images/projet1.webp'
-            title='Palettiseur de bardage'
-            description="Projet qui a pour but d'équiper et de programmer un robot qui va automatiquement paletiser les tôles produites en bout de ligne de production"
-            status='Terminé'
-            tags={["C#", "KRL", "Kuka.sim", "Beckhoff", "Cablâge", "Pneumatique"]}
-            />
-            <ProjectCard
-            image='/images/projet2.png'
-            title='Mon Portoflio'
-            description='Site décrivant mes compétences, mes projets, mon parcours. (ce site)'
-            status='Terminé'
-            tags={["Node.js", "SQL", "React.js", "Linux", "Docker", "Coolify"]}
-            />
-            <ProjectCard
-            title='Hello'
-            description='Lorem ipsum dolor'
-            status='En cours'
-            tags={["C#", "KRL"]}
-            />
+            {/* ponytail: French only until the /en route exists */}
+            {projects.map((p) => <ProjectCard key={p.id} {...localize(p, 'fr')} />)}
           </div>
 
           <Title id="competences" title="Compétences"/>

@@ -1,5 +1,5 @@
 import { lazy, Suspense } from 'react'
-import type { Todo } from '../src/types/todo.ts'
+import type { Project } from '../src/types/project.ts'
 
 // Lazy: each page is its own chunk, the browser only downloads the one it renders.
 const SsrHomePage = lazy(() => import('./pages/SsrHomePage.tsx').then((m) => ({ default: m.SsrHomePage })))
@@ -8,7 +8,7 @@ const Ssr404Page = lazy(() => import('./pages/Ssr404Page.tsx').then((m) => ({ de
 /*
  Data rendered by the server and handed to the client for hydration. Add a page = add a variant.
  */
-export type AppState = { page: 'ssr' | '404'; todos?: Todo[] }
+export type AppState = { page: 'ssr' | '404'; projects?: Project[] }
 
 /**
  * Function to select the active page to be rendered with ssr (lazy load the selected page)
@@ -29,7 +29,7 @@ export function Page({ state }: { state: AppState }) {
 function SsrPageSelect({ state }: { state: AppState }) {
   switch (state.page) {
     case 'ssr':
-      return <SsrHomePage />
+      return <SsrHomePage projects={state.projects ?? []} />
     case '404':
       return <Ssr404Page />
   }

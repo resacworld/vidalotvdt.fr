@@ -46,7 +46,7 @@ export async function renderPage(req: Request, res: Response, next: NextFunction
   try {
     let template = prodTemplate
     let render = prodRender!
-    if (vite) {
+    if (vite) { // If in dev mode
       template = await vite.transformIndexHtml(req.originalUrl, await fs.readFile('index.html', 'utf-8'))
       render = (await vite.ssrLoadModule('/client/entry-server.tsx')).render
     }

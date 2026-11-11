@@ -38,8 +38,8 @@ export function SsrHomePage() {
             {
               date: "2023-2025",
               school: "IMERIR",
-              schoolDetail: "Ocitanie",
-              role: "Alternant informaticien",
+              schoolDetail: "Occitanie - Pyrénées orientales / Perpignan",
+              role: "Alternant informaticien / Roboticien",
               company: "NovaLynx",
               companyDetail: "Integrateur d'innovations",
               current: true
@@ -47,8 +47,8 @@ export function SsrHomePage() {
             {
               date: "2025-2026",
               school: "CNAM",
-              schoolDetail: "Ocitanie",
-              role: "Alternant informaticien / roboticien",
+              schoolDetail: "Occitanie - Pyrénées orientales / Perpignan",
+              role: "Alternant informaticien / Roboticien",
               company: "NovaLynx",
               companyDetail: "Integrateur d'innovations",
               current: true
@@ -56,8 +56,8 @@ export function SsrHomePage() {
             {
               date: "2026-2029",
               school: "CESI",
-              schoolDetail: "Ocitanie",
-              role: "Alternant gestion de projet",
+              schoolDetail: "Occitanie - Haute Garonne / Toulouse",
+              role: "Alternant Gestion de projet technique",
               company: "NovaLynx",
               companyDetail: "Integrateur d'innovations",
               current: true
@@ -69,16 +69,18 @@ export function SsrHomePage() {
 
           <div className='flex justify-between flex-col md:flex-row'>
             <ProjectCard
-            title='Hello'
-            description='Lorem ipsum dolor'
-            status='En cours'
-            tags={["C#", "KRL"]}
+            image='/images/projet1.webp'
+            title='Palettiseur de bardage'
+            description="Projet qui a pour but d'équiper et de programmer un robot qui va automatiquement paletiser les tôles produites en bout de ligne de production"
+            status='Terminé'
+            tags={["C#", "KRL", "Kuka.sim", "Beckhoff", "Cablâge", "Pneumatique"]}
             />
             <ProjectCard
-            title='Hello'
-            description='Lorem ipsum dolor'
-            status='En cours'
-            tags={["C#", "KRL"]}
+            image='/images/projet2.png'
+            title='Mon Portoflio'
+            description='Site décrivant mes compétences, mes projets, mon parcours. (ce site)'
+            status='Terminé'
+            tags={["Node.js", "SQL", "React.js", "Linux", "Docker", "Coolify"]}
             />
             <ProjectCard
             title='Hello'

@@ -4,3 +4,4 @@ src/generated/
 node_modules/
 dist/
 .vscode/
+uploads/

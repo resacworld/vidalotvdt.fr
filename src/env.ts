@@ -7,6 +7,7 @@ const schema = z.object({
   DATABASE_URL: z.string().min(1),
   ADMIN_PASSWORD_HASH: z.string().regex(/^[0-9a-f]{32}:[0-9a-f]{128}$/, 'salt:hash, see .env.example'),
   SESSION_SECRET: z.string().min(32),
+  UPLOAD_DIR: z.string().min(1).default('uploads'),
 })
 
 const parsed = schema.safeParse(process.env)

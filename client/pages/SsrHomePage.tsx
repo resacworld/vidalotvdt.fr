@@ -21,9 +21,9 @@ export function SsrHomePage({ projects }: { projects: Project[] }) {
             Robotique industrielle, automatisme et développement C# chez NovaLynx, constructeur de machines spéciales près de Toulouse.
           </p>
           <div className='mt-6 flex flex-wrap gap-3'>
-            <button type='button' className='rounded-md bg-white px-4 py-2 text-sm font-medium text-indigo-950 hover:bg-violet-100'>
+            <a href='/cv/fr' download className='rounded-md bg-white px-4 py-2 text-sm font-medium text-indigo-950 hover:bg-violet-100'>
               Télécharger mon CV (PDF)
-            </button>
+            </a>
             <a href='#projets' className='rounded-md border border-violet-300/60 px-4 py-2 text-sm font-medium hover:bg-white/10'>
               Voir les projets
             </a>

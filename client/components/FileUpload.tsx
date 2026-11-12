@@ -8,7 +8,7 @@ type Props = {
   file?: StoredFile | null
   accept?: string // MIME type, e.g. 'application/pdf'
   label?: string
-  onFile: (file: File) => void
+  onFile: (file: File) => void | Promise<void> // a rejected promise shows an error in the card
 }
 
 /**
@@ -18,13 +18,21 @@ type Props = {
 export default function FileUpload({ title, subtitle, file, accept = 'application/pdf', label = 'Déposez un PDF ici pour remplacer le fichier', onFile }: Props) {
   const [dragging, setDragging] = useState(false)
   const [error, setError] = useState('')
+  const [busy, setBusy] = useState(false)
 
   // `accept` only filters the file picker, a dropped file can be anything: check it here too.
-  function pick(f: File | undefined) {
-    if (!f) return
+  async function pick(f: File | undefined) {
+    if (!f || busy) return
     if (accept && f.type !== accept) return setError('Format de fichier non accepté')
     setError('')
-    onFile(f)
+    setBusy(true)
+    try {
+      await onFile(f)
+    } catch {
+      setError('Échec de l’envoi, réessaie')
+    } finally {
+      setBusy(false)
+    }
   }
 
   function onDrop(e: DragEvent) {
@@ -58,7 +66,7 @@ export default function FileUpload({ title, subtitle, file, accept = 'applicatio
         onDrop={onDrop}
         className={`flex flex-col items-center gap-3 rounded-lg border-2 border-dashed px-4 py-6 text-center text-sm transition-colors ${dragging ? 'border-regular bg-extralight' : 'border-light'}`}
       >
-        <p className="text-extrabold">{label}</p>
+        <p className="text-extrabold">{busy ? 'Envoi en cours…' : label}</p>
         {/* <label> wrapping the input: native click-to-open, no ref needed. Input stays focusable (sr-only, not hidden). */}
         <label className="cursor-pointer rounded-md border border-regular px-4 py-1.5 text-bold hover:bg-extralight has-focus-visible:outline-2 has-focus-visible:outline-regular">
           Choisir un fichier

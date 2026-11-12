@@ -11,10 +11,8 @@ export const projectInput = z.object({
   descriptionFr: z.string().trim().max(2000),
   descriptionEn: z.string().trim().max(2000),
   status: z.enum(projectStatuses),
-  // Stored comma-separated: a comma inside a tag would split it.
-  tags: z.array(z.string().trim().min(1).max(50).regex(/^[^,]+$/)).max(20),
-  // Local path only (public/): no external URL, no blob:, no javascript:.
-  image: z.string().regex(/^\/[\w./-]+$/).nullable(),
+  tags: z.array(z.string().trim().min(1).max(50).regex(/^[^,]+$/)).max(20), // Stored comma-separated
+  image: z.string().regex(/^\/(?!.*\.\.)[\w./-]+$/).nullable(),             // Local path (public/ or /uploads/)
 })
 export type ProjectInput = z.infer<typeof projectInput>
 

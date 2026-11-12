@@ -23,6 +23,8 @@ export class HttpError extends Error {
  */
 export const errorHandler: ErrorRequestHandler = (err, _req, res, _next) => {
   if (err instanceof HttpError) return res.status(err.status).json({ error: err.message })
+  // Express's own client errors (body too large, malformed JSON...) carry status + expose: not a server bug.
+  if (err?.expose && err.status < 500) return res.status(err.status).json({ error: err.message })
   console.error(err)
   res.status(500).json({ error: 'Internal Server Error' })
 }

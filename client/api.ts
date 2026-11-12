@@ -17,3 +17,17 @@ const authLink: TRPCLink<AppRouter> = () => ({ op, next }) => observable((observ
 
 // Trpc api. httpLink, not httpBatchLink: batching is disabled server-side (see server.ts).
 export const api = createTRPCClient<AppRouter>({ links: [authLink, httpLink({ url: '/trpc' })] })
+
+/**
+ * File upload (raw PUT, the body is the file itself). Same 401 handling as authLink.
+ *
+ * @param url Upload route, e.g. /api/cv/fr
+ * @param file File picked by the user
+ * @returns The JSON sent back by the server
+ */
+export async function upload<T>(url: string, file: File): Promise<T> {
+  const res = await fetch(url, { method: 'PUT', body: file, headers: { 'content-type': file.type } })
+  if (res.status === 401) navigation.navigate('/admin/login')
+  if (!res.ok) throw new Error((await res.json().catch(() => null))?.error ?? res.statusText)
+  return res.json()
+}

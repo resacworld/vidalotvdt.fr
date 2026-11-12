@@ -82,9 +82,9 @@ export default function ProjectEditModal({ title, error, project, onClose, onSav
               <div className="space-y-2 text-sm text-gray-700">
                 <label className="inline-block cursor-pointer rounded-md border border-regular bg-white px-4 py-1.5 text-bold hover:bg-extralight has-focus-visible:outline-2 has-focus-visible:outline-regular">
                   Remplacer l’image
-                  <input type="file" accept="image/png,image/jpeg" className="sr-only" onChange={(e) => onImage(e.target.files?.[0])} />
+                  <input type="file" accept="image/png,image/jpeg,image/webp" className="sr-only" onChange={(e) => onImage(e.target.files?.[0])} />
                 </label>
-                <p>PNG ou JPG, format paysage.</p>
+                <p>PNG, JPG ou WebP, format paysage.</p>
               </div>
             </div>
           </div>

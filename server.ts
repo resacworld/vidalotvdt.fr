@@ -7,6 +7,7 @@ import { createExpressMiddleware } from '@trpc/server/adapters/express'
 import { appRouter } from './src/endpoint/appRouter.ts'
 import { createContext } from './src/endpoint/trpc.ts'
 import { pageEndpoint } from './src/endpoint/pageEndpoint.ts'
+import { fileEndpoint } from './src/endpoint/fileEndpoint.ts'
 import { setupFrontend } from './src/render.ts'
 
 const app = express()
@@ -25,6 +26,10 @@ app.use(express.json({ limit: '100kb' }))
  * - TRPC batching disabled: avoid brute force attempts
 */
 app.use('/trpc', apiRateLimit, loginRateLimit, createExpressMiddleware({ router: appRouter, createContext, allowBatching: false }))
+// File uploads (raw body, not tRPC), CV downloads and uploaded images
+app.use('/api', apiRateLimit)
+app.use(fileEndpoint)
+
 await setupFrontend(app) // before pages: serves /client/*, /@vite/* in dev and assets in prod
 
 // Initialize routes

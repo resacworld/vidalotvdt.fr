@@ -17,6 +17,7 @@ export const securityHeaders = helmet({
       scriptSrc: ["'self'", (_req, res) => `'nonce-${(res as Response).locals.nonce}'`],
       // Dev only: Vite's HMR websocket runs on its own port; plain http on localhost, no https upgrade.
       connectSrc: isProd ? ["'self'"] : ["'self'", 'ws://localhost:*'],
+      imgSrc: ["'self'", 'data:', 'blob:'],
       upgradeInsecureRequests: isProd ? [] : null,
     },
   },

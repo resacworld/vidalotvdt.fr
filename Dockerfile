@@ -10,7 +10,7 @@ RUN DATABASE_URL=file:/tmp/build.db npx prisma generate && npm run build
 # --- runtime: prod deps only
 FROM node:24-slim
 WORKDIR /app
-ENV NODE_ENV=production PORT=3000 DATABASE_URL=file:/data/app.db
+ENV NODE_ENV=production PORT=3000 DATABASE_URL=file:/data/app.db UPLOAD_DIR=/data/uploads
 # Prisma's migration engine needs openssl, missing from slim images.
 RUN apt-get update && apt-get install -y --no-install-recommends openssl && rm -rf /var/lib/apt/lists/*
 COPY package*.json ./

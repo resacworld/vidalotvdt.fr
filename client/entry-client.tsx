@@ -1,6 +1,7 @@
 import { lazy, StrictMode, Suspense } from 'react'
 import { createRoot, hydrateRoot } from 'react-dom/client'
 import { Page } from './Page.tsx'
+import LoadingPage from './pages/LoadingPage.tsx'
 
 const SpaAdmin = lazy(() => import('./pages/SpaAdmin.tsx').then((m) => ({ default: m.SpaAdmin })))
 
@@ -12,5 +13,5 @@ const root = document.getElementById('root')!
 if (window.__STATE__) {
   hydrateRoot(root, <StrictMode><Page state={window.__STATE__} /></StrictMode>)
 } else {
-  createRoot(root).render(<StrictMode><Suspense fallback={<p>Chargement…</p>}><SpaAdmin /></Suspense></StrictMode>)
+  createRoot(root).render(<StrictMode><Suspense fallback={<LoadingPage />}><SpaAdmin /></Suspense></StrictMode>)
 }
